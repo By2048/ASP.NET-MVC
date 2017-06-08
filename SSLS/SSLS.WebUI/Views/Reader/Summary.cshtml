@@ -1,0 +1,12 @@
+﻿@model SSLS.Domain.Concrete.Reader
+
+
+@if (Model.Id==0)
+{
+    @Html.ActionLink("登录", "Login", "Reader", new {@class = "btn btn-default infoButton" })
+}
+else
+{
+    @Html.ActionLink("欢迎 "+ @Model.Name,"ReaderInfo","Reader",new { @class = "btn btn-default infoButton" })
+    @Html.ActionLink("注销", "Logout", "Reader", new { @class = "btn btn-default infoButton" })
+}

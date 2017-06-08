@@ -1,0 +1,46 @@
+﻿@model SSLS.WebUI.Models.BookRackBorrowViewModel
+
+@{
+    ViewBag.Title = "BookRackBorrow";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+    <div>
+        <h2>确认借阅</h2>
+
+        <table class="table myTable">
+            <thead>
+                <tr>
+                    <th>书名</th>
+                    <th>用户名</th>
+                    <th>借书日期</th>
+                    <th>应还日期</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Borrows)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BookName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ReaderName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BorrowingDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ShouldReturnDate)
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+     
+    </div>

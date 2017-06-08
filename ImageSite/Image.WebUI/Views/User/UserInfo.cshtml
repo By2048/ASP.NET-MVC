@@ -1,0 +1,101 @@
+﻿@model Image.WebUI.Models.UserInfoModel
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title>UserInfo</title>
+    <style>
+        .user-info {
+            font-size: 18px;
+            width: 400px;
+            margin: 20px auto 0 auto;
+        }
+
+        .user-favorite {
+            width: 1000px;
+            margin: 40px auto 0 auto;
+        }
+
+            .user-favorite th, td {
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="user-info">
+        <dl class="dl-horizontal">
+            <dt>Id</dt>
+            <dd>@Model.User.Id</dd>
+
+            <dt>Name</dt>
+            <dd>@Model.User.UserName</dd>
+
+            <dt>PassWord</dt>
+            <dd>@Model.User.PassWord</dd>
+
+            <dt>Email</dt>
+            <dd>@Model.User.Email</dd>
+
+            <dt>UserType</dt>
+            <dd>@Model.User.UserType</dd>
+
+            <dt>BrowseNum</dt>
+            <dd>@Model.User.Balance</dd>
+
+            <dt>CreateDate</dt>
+            <dd>@Model.User.CreateDate</dd>
+
+            <dt>Information</dt>
+            <dd>@Model.User.Information</dd>
+        </dl>
+    </div>
+
+    <div class="user-favorite">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>FolderId</th>
+                    <th>FolderName</th>
+                    <th>CollectionDate</th>
+                    <th>UserId</th>
+                    <th>UserName</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var cnt = 0;
+                }
+                @foreach (var item in Model.Favorites)
+                {
+                    <tr>
+                        <th scope="row">@cnt</th>
+                        <td>@item.FolderId</td>
+                        <td>@item.FolderName</td>
+                        <td>@item.CollectionDate</td>
+                        <td>@item.UserId</td>
+                        <td>@item.UserName</td>
+                        <td>
+                            @using (Html.BeginForm("DeleteFavorites", "Favorite"))
+                            {
+                                @Html.Hidden("folderId", item.FolderId)
+                                <input type="submit" class="btn btn-default" value="Del" />
+                            }
+                        </td>
+                    </tr>
+                    cnt = cnt + 1;
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

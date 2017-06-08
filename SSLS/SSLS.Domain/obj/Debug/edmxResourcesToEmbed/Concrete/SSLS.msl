@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SSLSModelStoreContainer" CdmEntityContainer="SSLSEntities">
+    <EntitySetMapping Name="Book">
+      <EntityTypeMapping TypeName="SSLSModel.Book">
+        <MappingFragment StoreEntitySet="Book">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Authors" ColumnName="Authors" />
+          <ScalarProperty Name="Press" ColumnName="Press" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Borrow">
+      <EntityTypeMapping TypeName="SSLSModel.Borrow">
+        <MappingFragment StoreEntitySet="Borrow">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="BookName" ColumnName="BookName" />
+          <ScalarProperty Name="ReaderName" ColumnName="ReaderName" />
+          <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+          <ScalarProperty Name="BorrowingDate" ColumnName="BorrowingDate" />
+          <ScalarProperty Name="ShouldReturnDate" ColumnName="ShouldReturnDate" />
+          <ScalarProperty Name="ReaderReturnDate" ColumnName="ReaderReturnDate" />
+          <ScalarProperty Name="Renew" ColumnName="Renew" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="SSLSModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fine">
+      <EntityTypeMapping TypeName="SSLSModel.Fine">
+        <MappingFragment StoreEntitySet="Fine">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="BookName" ColumnName="BookName" />
+          <ScalarProperty Name="ReaderID" ColumnName="ReaderID" />
+          <ScalarProperty Name="ReaderName" ColumnName="ReaderName" />
+          <ScalarProperty Name="BorrowID" ColumnName="BorrowID" />
+          <ScalarProperty Name="FineMoney" ColumnName="FineMoney" />
+          <ScalarProperty Name="OverTime" ColumnName="OverTime" />
+          <ScalarProperty Name="FineDate" ColumnName="FineDate" />
+          <ScalarProperty Name="IsPay" ColumnName="IsPay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reader">
+      <EntityTypeMapping TypeName="SSLSModel.Reader">
+        <MappingFragment StoreEntitySet="Reader">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="SSLSModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

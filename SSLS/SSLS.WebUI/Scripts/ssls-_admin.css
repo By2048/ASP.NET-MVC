@@ -1,0 +1,53 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+}
+
+th, td {
+    text-align: center;
+}
+
+
+div {
+    /*background-color: rgb(255,255,255);*/
+    border-radius: 10px;
+    /*border: 1px solid blue;*/
+}
+
+.book_store {
+    margin: 10px auto;
+    width: 1200px;
+    height:600px;
+}
+.content{
+    width:1200px;
+    height:600px;
+    margin:0px auto 0px auto;
+}
+
+.content_left {
+    width: 190px;
+    height:600px;
+    float: left;
+    padding-top:150px;
+}
+.content_left a{
+    margin-left:20px;
+    width:150px;
+    text-align:center;
+}
+
+.content_right {
+    width: 1000px;
+    height:600px;
+    float: right;
+}
+
+.footer {
+    clear: both;
+    width: 1200px;
+    height: 40px;
+    text-align: center;
+    line-height:40px; 
+}

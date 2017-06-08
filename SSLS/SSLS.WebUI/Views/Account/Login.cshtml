@@ -1,0 +1,62 @@
+﻿@model SSLS.WebUI.Models.LoginViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#userName").val("@ViewBag.userName");
+        });
+    </script>
+    <style>
+        .readerLogin {
+            width: 300px;
+            margin: 200px auto 0px auto;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .readerName, .readerSubmite, .readerPsw {
+            margin-top: 30px;
+        }
+
+            .readerSubmite input {
+                float: left;
+                width: 200px;
+                margin-left:50px;
+            }
+
+    </style>
+
+</head>
+<body>
+    <div class="readerLogin">
+        <h3>管理员登录</h3>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            <div class="readerName">
+                @Html.TextBoxFor(c => c.Name, new { @id = "userName", @class = "form-control", placeholder = "请输入帐号" })
+            </div>
+            <div class="readerPsw">
+                @Html.PasswordFor(c => c.Password, new { @class = "form-control", placeholder = "请输入密码" })
+            </div>
+            <div class="readerSubmite">
+                <input type="submit" value="登录" class="btn btn-default" />
+            </div>
+        }
+    </div>
+</body>
+</html>

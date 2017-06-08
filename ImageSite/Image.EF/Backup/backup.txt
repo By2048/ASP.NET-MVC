@@ -1,0 +1,17 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+using System.Data.Entity.ModelConfiguration.Conventions;
+
+  
+modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+    

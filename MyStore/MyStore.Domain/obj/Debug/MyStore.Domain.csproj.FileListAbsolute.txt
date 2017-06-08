@@ -1,0 +1,88 @@
+D:\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll.config
+D:\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll
+D:\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.pdb
+D:\MyStore\MyStore.Domain\bin\Debug\EntityFramework.dll
+D:\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\MyStore\MyStore.Domain\bin\Debug\EntityFramework.xml
+D:\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyStore\MyStore.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.csprojResolveAssemblyReference.cache
+D:\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.dll
+D:\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.pdb
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll.config
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.pdb
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.csprojResolveAssemblyReference.cache
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.pdb
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll.config
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.pdb
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.csprojResolveAssemblyReference.cache
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.pdb
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll.config
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.pdb
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.csprojResolveAssemblyReference.cache
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.pdb
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll.config
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.pdb
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.pdb
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll.config
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.pdb
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.csprojResolveAssemblyReference.cache
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.pdb
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll.config
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.pdb
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\bin\Debug\EntityFramework.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\bin\Debug\EntityFramework.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.csprojResolveAssemblyReference.cache
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.pdb
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll.config
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.dll
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\bin\Debug\MyStore.Domain.pdb
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\bin\Debug\EntityFramework.dll
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\bin\Debug\EntityFramework.xml
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.csprojResolveAssemblyReference.cache
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.dll
+D:\ASP.NET-MVC\MyStore\MyStore.Domain\obj\Debug\MyStore.Domain.pdb

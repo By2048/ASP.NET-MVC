@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="51fb21226fb249f68c5d86115b5ed2ac" Name="Diagram1">
+        <EntityTypeShape EntityType="SSLSModel.Book" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSLSModel.Borrow" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSLSModel.Category" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSLSModel.Fine" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SSLSModel.Reader" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="SSLSModel.FK__Book__CategoryID__0519C6AF" ManuallyRouted="false" />
+        <AssociationConnector Association="SSLSModel.FK__Borrow__BookID__0DAF0CB0" ManuallyRouted="false" />
+        <AssociationConnector Association="SSLSModel.FK__Borrow__ReaderID__0EA330E9" ManuallyRouted="false" />
+        <AssociationConnector Association="SSLSModel.FK__Fine__BorrowID__1367E606" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SSLSModel.Admin" Width="1.5" PointX="7.625" PointY="6" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

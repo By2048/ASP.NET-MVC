@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+
+using System.Data.Entity.ModelConfiguration.Conventions;
+
+modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
+
+create database  SSLS
+go
+use SSLS
+go
+
+--图书分类表 Category
+create table Category
+(
+	Id			Int	identity(1,1),					--分类Id
+	Code		NVarchar(50)		NOT NULL,		--分类编码，用于快速录入
+	Name		NVarchar(250)		NOT NULL,		--分类名称
+	Description	NVarchar(1000)		NULL,			--分类的详细描述
+	Primary key(Id),
+);   
+                                    
+--图书表Book
+create table Book
+(
+	Id			Int identity(1,1),					--图书ID
+	CategoryID	Int					NOT NULL,		--所属的分类ID	
+	Code		NVarchar(50)		NOT NULL,		--图书编码，用于快速录入
+	Name		NVarchar(100)		NOT NULL,		--图书名称
+	Authors		NVarchar(100)		NOT NULL,		--图书作者名单
+	Press		NVarchar(100)		NULL,			--图书出版社名称
+	ImageUrl	NVarchar(1000)		NULL,			--图片文件所在的路径空->默认图片
+	Description	NVarchar(2000)		NULL,			--图书的详细介绍
+	PublishDate	DateTime			NULL,			--出版日期
+	Price		Decimal (20)		NULL,			--图书价格
+	Status		NVarchar(100)		NULL,			--状态未在库、在库、外借
+	Num			Int					NULL			--图书数量
+	Primary key(Id),
+	Foreign key (CategoryID) references Category(Id),
+);
+
+--读者表Reader
+create table Reader
+(
+	Id			Int identity(1,1),				--读者Id
+	Name		NVarchar(50)	NOT NULL,		--读者姓名
+	Money		Decimal (20)	NOT NULL,		--读者金额
+	Class		NVarchar(50)	NULL,			--读者权限
+	Email		NVarchar(50)	NULL,			--读者邮箱
+	Password	NVarchar(50)	NOT NULL,		--读者密码
+	Primary key(Id),
+);
+
+--借阅表Borrow
+create table Borrow
+(
+	Id	Int identity(1,1)				not null,		--借阅Id
+	BookID				Int				not null,		--图书Id
+	BookName			NVarchar(50),	
+	ReaderName			NVarchar(50),				
+	ReaderID			Int				not null,		--读者Id
+	BorrowingDate		DateTime		not null,		--借阅日期	
+	ShouldReturnDate	DateTime		not null,		--应还日期
+	ReaderReturnDate	DateTime,						--归还日期
+	Renew				NVarchar(50),					--是否续借
+	Primary key(Id),
+	Foreign key (BookID) references Book(Id),
+	Foreign key (ReaderID) references Reader(Id),		
+);
+
+
+--罚款缴纳表Fine
+create table Fine
+(
+	Id	Int identity(1,1),					--罚款缴纳Id
+	BookID			int ,					--图书id
+	BookName		NVarchar(50) not null,	--图书名
+	ReaderID		int	,					--读者ID
+	ReaderName		NVarchar(50) not null, --读者名
+	BorrowID		Int			NOT NULL,	--借阅Id
+	FineMoney		Decimal(20)	NOT NULL,	--罚款金额
+	OverTime		Int	,					--超时时间
+	FineDate		DateTime	,			--罚款日期
+	IsPay			NVarchar(50),			--是否缴纳	
+	Primary key(Id),
+	Foreign key (BorrowID) references Borrow(Id),
+);	
+
+Insert into Category(Code,Name,Description) values('c1','玄幻',NULL)
+Insert into Category(Code,Name,Description) values('c2','奇幻',NULL)
+Insert into Category(Code,Name,Description) values('c3','武侠',NULL)
+Insert into Category(Code,Name,Description) values('c4','仙侠',NULL)
+Insert into Category(Code,Name,Description) values('c5','都市',NULL)
+Insert into Category(Code,Name,Description) values('c6','悬疑',NULL)
+Insert into Category(Code,Name,Description) values('c7','游戏',NULL)
+
+--40
+Insert into Book(CategoryID,Code,Name,Authors,Press,ImageUrl,Description,PublishDate,Price,Status,Num)
+Values('1','11_493239','修罗武神','善良的蜜蜂','17K小说网',NULL,NULL,NULL,NULL,'在库',5)
+Insert into Book(CategoryID,Code,Name,Authors,Press,ImageUrl,Description,PublishDate,Price,Status,Num)
+Values('1','11_327976','傲世丹神','寂小贼','17K小说网',NULL,NULL,NULL,NULL,'在库',5)
+Insert into Book(CategoryID,Code,Name,Authors,Press,ImageUrl,Description,PublishDate,Price,Status,Num)
+Values('1','1_2750457','大主宰','天蚕土豆','起点中文网',NULL,NULL,NULL,NULL,'在库',5)
+Insert into Book(CategoryID,Code,Name,Authors,Press,ImageUrl,Description,PublishDate,Price,Status,Num)
+Values('2','19_342974','永夜君王','烟雨江南','纵横小说网',NULL,NULL,NULL,NULL,'在库',5)
+Insert into Book(CategoryID,Code,Name,Authors,Press,ImageUrl,Description,PublishDate,Price,Status,Num)
+Values('2','11_1291927','地狱恶灵','生活很黑白','17K小说网',NULL,NULL,NULL,NULL,'在库',5)
+Insert into Book(CategoryID,Code,Name,Authors,Press,ImageUrl,Description,PublishDate,Price,Status,Num)
+Values('2','11_1616604','最强的城主','老妖子','17K小说网',NULL,NULL,NULL,NULL,'在库',5)
+Insert into Book(CategoryID,Code,Name,Authors,Press,ImageUrl,Description,PublishDate,Price,Status,Num)
+Values('3','11_1806098','三国第一人','惨绿少年','17K小说网',NULL,NULL,NULL,NULL,'在库',5)
+Insert into Book(CategoryID,Code,Name,Authors,Press,ImageUrl,Description,PublishDate,Price,Status,Num)
+Values('3','11_1510954','乱明风云','为花做和尚','17K小说网',NULL,NULL,NULL,NULL,'在库',5)
+Insert into Book(CategoryID,Code,Name,Authors,Press,ImageUrl,Description,PublishDate,Price,Status,Num)
+Values('3','11_1401853','重生剑侠图','四条不糊','17K小说网',NULL,NULL,NULL,NULL,'在库',5)
+
+
+
+Insert into Reader(Name,Money,Class,Email,Password)
+Values('书友2771735','100','visitor',NULL,'123')
+Insert into Reader(Name,Money,Class,Email,Password)
+Values('何时有终极','100','member',NULL,'123')
+Insert into Reader(Name,Money,Class,Email,Password)
+Values('神出没','100','author',NULL,'123')
+Insert into Reader(Name,Money,Class,Email,Password)
+Values('Sophie_220','100','author',NULL,'123')
+Insert into Reader(Name,Money,Class,Email,Password)
+Values('鬼葬曲','100','member',NULL,'123')
+Insert into Reader(Name,Money,Class,Email,Password)
+Values('A001','100','admin','1247079575@qq.com','123')
+Insert into Reader(Name,Money,Class,Email,Password)
+Values('A002','100','visitor','1247079575@qq.com','123')
+Insert into Reader(Name,Money,Class,Email,Password)
+Values('A002','100','member','1247079575@qq.com','123')
+
+-- visitor member admin author
+
+select * from Category
+select * from Reader
+select * from Book
+select * from Reader
+select * from Borrow
+select * from Fine
+
+--			delete Borrow
+--			delete Book
+--			delete Fine
+--			delete Reader
+
+-->

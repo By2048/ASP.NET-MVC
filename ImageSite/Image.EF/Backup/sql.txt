@@ -1,0 +1,92 @@
+﻿
+Link-ImageSite
+P@ssw0rd
+
+<add name="ImageSiteEntities" connectionString="data source=.;initial catalog=ImageSite;uid=Link-ImageSite;password=P@ssw0rd" providerName="System.Data.SqlClient" />
+
+
+create database ImageSite
+go
+use ImageSite
+go
+
+create table [Folders]
+(
+	[Id] 			int identity(1,1),
+	[Name]			nvarchar(100) not null,
+	[Path]			nvarchar(100) not null,
+	[CreateDate]	datetime not null,
+	[ImgNum]		int not null,
+	[TotalSize]		float not null,
+	primary key (Id),
+)
+
+create table [Images]
+(
+	[Id] 				int identity(1,1),
+	[FolderId]			int not null,
+	[FolderName]		nvarchar(100) not null,
+	[Name]				nvarchar(100) not null,
+	[Path]				nvarchar(200) not null,
+	[Type]				nvarchar(100) not null,
+	[Size]				int not null,
+	[Width]				int not null,
+	[Height]			int not null,
+	[VisitDate]			datetime not null, 
+	[CreateDate]		datetime not null,
+	[ChangeDate]		datetime not null,
+	primary key (Id),
+	--foreign key ([FolderNum]) references Folders(Id),
+)
+
+create table [Users]
+(
+	[Id] 			int identity(1,1),
+	[UserName]		nvarchar(100) not null,
+	[PassWord]		nvarchar(100) not null,
+	[Email]			nvarchar(100) not null,
+	[UserType]		nvarchar(50) not null,
+	[Balance]		decimal(9,2) not null,
+	[BrowseNum]		int not null,
+	[CreateDate]	datetime not null,
+	[Information]	nvarchar(300) not null,
+	primary key (Id),
+)
+
+create table [Favorites]
+(
+	[Id]				int identity(1,1),
+	[UserId]			int not null,
+	[UserName]			nvarchar(100) not null,
+	[FolderId]			int not null,
+	[FolderName]		nvarchar(100) not null,
+	[CollectionDate]	datetime not null,
+	primary key (Id),
+)
+
+
+
+
+select * from Folders
+select * from Images
+select * from Users
+select * from Favorites
+select * from Images order by CreateDate desc
+
+delete from Folders
+delete from Images
+delete from Users
+delete from Favorites
+
+drop table Folders
+drop table Images
+drop table Users
+drop table Favorites
+
+insert into Folders values('name-1','path-1','2015-12-5','12','5.3')
+insert into Folders values('name-2','path-1','2015-12-5','12','5.3')
+insert into Folders values('name-3','path-1','2015-12-5','12','5.3')
+insert into Folders values('name-4','path-1','2015-12-5','12','5.3')
+
+insert into Users values('A001','123','123@123.123','user','100','0','2015-11-5 21:21:25 ','Test-Info')
+

@@ -1,0 +1,56 @@
+﻿@model SSLS.Domain.Concrete.Reader
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    <meta charset="utf-8" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+    <style>
+        .readerRegister{ 
+            width: 300px;
+            margin: 200px auto 0px auto;
+        }
+        h3,h4{
+            text-align:center;
+        }
+        .readerRegister input{
+            margin-top:30px;
+        }
+        .registerSubmit{
+            width:200px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .registerSubmit input{
+            width:200px;            
+        }
+    </style>
+</head>
+<body>
+    <div class="readerRegister"> 
+        <h3>读者注册</h3>
+        <h4>@ViewBag.msg</h4>
+        @using (Html.BeginForm("Register", "Reader", FormMethod.Post))
+        {
+
+            @Html.TextBoxFor(model=>model.Name,new {@class = "form-control", placeholder = "请输入你要注册帐号" })
+
+            @Html.PasswordFor(model => model.Password, new { @class = "form-control", placeholder = "请输入密码" })
+
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", placeholder = "请输入你的邮箱" })
+           
+            <div class="registerSubmit">
+                <input type="submit" value="确认注册" class="btn btn-default" />
+            </div>            
+        }
+    </div>
+</body>
+</html>

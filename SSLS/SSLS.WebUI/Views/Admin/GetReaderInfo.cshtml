@@ -1,0 +1,113 @@
+﻿@model IEnumerable<SSLS.Domain.Concrete.Borrow>
+
+@{
+    ViewBag.Title = "ReaderIndex";
+    Layout = null;
+}
+
+<style>
+    .dialogWidth{
+        width:900px;
+    }
+</style>
+
+<meta charset="utf-8" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+
+<script>
+    $(function () {
+        $('#readerInfo').modal("show")
+        $("#closeModal").click(function () {
+            window.history.go(-1);
+        })
+    })
+</script>
+
+<style>
+    .dialogWidth{
+        width:900px;
+    }
+</style>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="readerInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog dialogWidth">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    读者借阅信息
+                </h4>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>图书编号</th>
+                            <th>书名</th>
+                            <th>用户名</th>
+                            <th>借书日期</th>
+                            <th>应还日期</th>
+                            <th>实还日期</th>
+                            <th>是否续借</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BookID)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BookName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ReaderName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BorrowingDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ShouldReturnDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ReaderReturnDate)
+                                </td>
+                                <td>
+                                    @if (item.Renew == "1")
+                                    {
+                                        <p>已续借</p>
+                                    }
+                                    else
+                                    {
+                                        <p>否</p>
+                                    }
+
+                                </td>  
+                            </tr>
+                        }                       
+
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="closeModal" class="btn btn-default" data-dismiss="modal">
+                    关闭
+                </button>
+                @*<button type="button" class="btn btn-default">
+                    提交更改
+                </button>*@
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>

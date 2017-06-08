@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "ReaderInfo";
+    Layout = "~/Views/Shared/_Reader.cshtml";
+}
+
+<style>
+    .readerInfo{
+        width:500px;
+        margin:150px auto;
+    }
+    td{
+        width:250px;        
+    }
+    tr{
+        height:50px;
+    }
+    .tdLeft span{
+        float:right;
+        margin-right:10px;
+    }
+    .tdRight span{
+        float:left;
+        margin-left:10px;
+    }
+</style>
+
+<div class="readerInfo">
+
+    <table>
+        <tr>
+            <td class="tdLeft"><span class="btn btn-default">姓名</span></td>
+            <td class="tdRight"><span class="btn btn-default">@Model.Name</span></td>
+        </tr>
+        <tr>
+            <td class="tdLeft"><span class="btn btn-default">邮箱</span></td>
+            <td class="tdRight"><span class="btn btn-default">@Model.Email</span></td>
+        </tr>
+        <tr>
+            <td class="tdLeft"><span class="btn btn-default">账户类型</span></td>
+            <td class="tdRight"><span class="btn btn-default">@Model.Class</span></td>
+        </tr>
+        <tr>
+            <td class="tdLeft"><span class="btn btn-default">余额</span></td>
+            <td class="tdRight"><span class="btn btn-default">@Model.Money</span></td>
+        </tr>
+    </table>
+
+  
+</div>

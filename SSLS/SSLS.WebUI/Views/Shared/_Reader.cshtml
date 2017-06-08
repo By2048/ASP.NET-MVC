@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Scripts/ssls-_reader.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="book_store">
+        <div class="content">
+            <div class="content_left">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="~/Book/List">主页</a>
+                    </li>
+                    <li class="list-group-item">
+                        @Html.ActionLink("我的信息", "ReaderInfo", "Reader")
+                    </li>
+                    <li class="list-group-item">
+                        @Html.ActionLink("我的罚款", "MyFine", "Reader")
+                    </li>
+                    <li class="list-group-item">
+                        @Html.ActionLink("借阅历史", "BorrowHistory", "Reader")
+                    </li>
+                    <li class="list-group-item">
+                        @Html.ActionLink("充值", "Recharge", "Reader")
+                    </li>
+                    <li class="list-group-item">
+                        @Html.ActionLink("修改密码", "ChangePassword", "Reader")
+                    </li>
+                </ul>
+            </div>
+            <div class="content_right">
+                @RenderBody()
+            </div>
+        </div>
+        <div class="footer">
+            ©2016 14145305 付祥运
+        </div>
+    </div>
+</body>
+</html>

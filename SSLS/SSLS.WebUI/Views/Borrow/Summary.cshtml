@@ -1,0 +1,11 @@
+﻿@model SSLS.WebUI.Models.BorrowSummaryViewModel
+
+
+@if (Model.Reader.Id!=0)
+{
+
+    @Html.ActionLink("暂存架 "+ @Model.BookRack.Count()+ " 本书", "Index", "Borrow", new { @class = "btn btn-default infoButton" })
+
+    @Html.ActionLink("我的借阅 "+@Model.Count+" 本书", "Borrow", "Borrow", new { @class = "btn btn-default infoButton" })
+
+}

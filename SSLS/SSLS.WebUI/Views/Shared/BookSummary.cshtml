@@ -1,0 +1,18 @@
+﻿@model SSLS.Domain.Concrete.Book
+
+<tr>
+    <td class="text-center"><label>@Model.Code</label></td>
+    <td class="text-center"><label>@Model.Name</label></td>
+    <td class="text-center"><label>@Model.Authors</label></td>
+    <td class="text-center"><label>@Model.Press</label></td>
+    <td>
+        @using (Html.BeginForm("AddToBookRack", "Borrow"))
+        {
+            <div class="pull-right">
+                @Html.HiddenFor(x => x.Id)
+                @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+                <input type="submit" class="btn btn-default" value="加入暂存架" />
+            </div>
+        }
+    </td>
+</tr>

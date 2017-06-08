@@ -1,0 +1,316 @@
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\csc.exe
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\System.Collections.Immutable.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\vbc.exe
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe.config
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll.config
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\SSLS.WebUI.pdb
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\EntityFramework.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\Ninject.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\SSLS.Domain.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Helpers.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Mvc.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Razor.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Webpages.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\WebActivatorEx.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\SSLS.Domain.pdb
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\EntityFramework.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\Ninject.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Razor.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Webpages.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Helpers.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\System.Web.Mvc.xml
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.csprojResolveAssemblyReference.cache
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.dll
+E:\Desktop\NewStart\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.pdb
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\csc.exe
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\System.Collections.Immutable.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\vbc.exe
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe.config
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll.config
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.pdb
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\EntityFramework.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\Ninject.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\SSLS.Domain.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Helpers.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Mvc.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Razor.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\WebActivatorEx.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\SSLS.Domain.pdb
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\EntityFramework.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\Ninject.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Razor.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Helpers.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\System.Web.Mvc.xml
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.csprojResolveAssemblyReference.cache
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.dll
+E:\Desktop\SSLS V5.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.pdb
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\csc.exe
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\System.Collections.Immutable.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\vbc.exe
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe.config
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll.config
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.pdb
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\EntityFramework.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\Ninject.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\SSLS.Domain.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Helpers.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Mvc.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Razor.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\WebActivatorEx.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\SSLS.Domain.pdb
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\EntityFramework.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\Ninject.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Razor.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Helpers.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\System.Web.Mvc.xml
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.csprojResolveAssemblyReference.cache
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.dll
+E:\Desktop\SSLS V7.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.pdb
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.csprojResolveAssemblyReference.cache
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.pdb
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\csc.exe
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\System.Collections.Immutable.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\vbc.exe
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe.config
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll.config
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.pdb
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\EntityFramework.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\SSLS.Domain.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Helpers.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Mvc.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Razor.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\WebActivatorEx.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\SSLS.Domain.pdb
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\EntityFramework.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Razor.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Helpers.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Mvc.xml
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Desktop\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\csc.exe
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\System.Collections.Immutable.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\vbc.exe
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe.config
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll.config
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\SSLS.WebUI.pdb
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\EntityFramework.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\SSLS.Domain.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Helpers.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Mvc.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Razor.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\WebActivatorEx.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\SSLS.Domain.pdb
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\EntityFramework.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Razor.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Helpers.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\System.Web.Mvc.xml
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.csprojResolveAssemblyReference.cache
+D:\SSLS V8.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.dll
+D:\SSLS V8.0\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.pdb
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.pdb
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\csc.exe
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\System.Collections.Immutable.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\System.Reflection.Metadata.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\vbc.exe
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\roslyn\VBCSCompiler.exe.config
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll.config
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\SSLS.WebUI.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\SSLS.WebUI.pdb
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\EntityFramework.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\Ninject.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\SSLS.Domain.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Helpers.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Mvc.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Razor.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Webpages.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\WebActivatorEx.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\SSLS.Domain.pdb
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\EntityFramework.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\EntityFramework.SqlServer.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\Ninject.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\Ninject.Web.Common.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\Ninject.Web.Mvc.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Razor.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Webpages.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Deployment.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Webpages.Razor.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Helpers.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\System.Web.Mvc.xml
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\ASP.NET-MVC\SSLS\SSLS.WebUI\obj\Debug\SSLS.WebUI.csprojResolveAssemblyReference.cache

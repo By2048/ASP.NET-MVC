@@ -1,0 +1,14 @@
+﻿@model MyStore.Domain.Concrete.Customer
+
+<div class="navbar-text navbar-right">
+    @if (Model.Id == 0)
+    {
+        @Html.ActionLink("登录", "Login", "Customer")
+    }
+    else
+    {
+        <b>欢迎:</b>
+        @Model.UserName
+        @Html.ActionLink("注销", "Logout", "Customer")
+    }
+</div>

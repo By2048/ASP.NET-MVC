@@ -1,0 +1,111 @@
+﻿@model Image.WebUI.Models.NavMenuModel
+
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Menu";
+}
+
+<style>
+    .content_left {
+        float: left;
+        height: 750px;
+        width: 450px;
+        margin-left: 15px;
+    }
+          .content_left a {
+            text-align: center;
+            font-size: 12px;
+        }
+
+    .folder_page_list {
+        width: 450px;
+        height: 50px;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+    }
+
+        .folder_page_list .pagination-container {
+            height: 50px;
+        }
+    .active {
+        background-color:#428bca;
+        color:red;
+    }
+</style>
+
+
+<div class="content_left">
+        @foreach (var item in Model.PagedListFolder)
+        {
+            if (item.Id == ViewBag.FolderId)
+            {
+                    @Html.ActionLink(item.Name, "Index", "Home",
+                   new { folderPage = ViewBag.FolderPage, folderId = item.Id, imagePage = 1, keyWord = ViewBag.KeyWord },
+                   new { @class = "list-group-item active" })
+            }
+            else
+            {
+                    @Html.ActionLink(item.Name, "Index", "Home",
+                    new { folderPage = ViewBag.FolderPage, folderId = item.Id, imagePage = 1, keyWord = ViewBag.KeyWord },
+                     new { @class = "list-group-item" })
+            }
+        }
+    <div class="folder_page_list">
+        @Html.PagedListPager(Model.PagedListFolder, page => Url.Action("Index", "Home", new { folderPage = page, folderId = ViewBag.FolderId, imagePage = ViewBag.ImagePage }))
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        //初始化加载是否添加收藏
+        $.ajax({
+            type: "POST",
+            url: "/Favorite/IsAddFavorites",
+            data: {
+                FolderId:@ViewBag.FolderId,
+            },
+            success: function (data) {
+                if(data.status==true){
+                    $("#btnFavorite span").removeClass("glyphicon glyphicon-heart-empty");
+                    $("#btnFavorite span").addClass("glyphicon glyphicon-heart");
+                }
+            }
+        });
+
+        //未添加收藏添加
+        //添加则删除
+        $("#btnFavorite").click(function () {
+            //添加
+            $.ajax({
+                type: "POST",
+                url: "/Favorite/AddFavorites",
+                data: {
+                    FolderId:@ViewBag.FolderId,
+                },
+                success: function (data) {
+                    if(data.status==true){
+                        $("#btnFavorite span").removeClass("glyphicon glyphicon-heart-empty");
+                        $("#btnFavorite span").addClass("glyphicon glyphicon-heart");
+                    }else{
+                        //删除
+                        $.ajax({
+                            type: "POST",
+                            url: "/Favorite/DelFavorites",
+                            data: {
+                                FolderId:@ViewBag.FolderId,
+                            },
+                            success: function (data) {
+                                if(data.status==true){
+                                    $("#btnFavorite span").removeClass("glyphicon glyphicon-heart");
+                                    $("#btnFavorite span").addClass("glyphicon glyphicon-heart-empty");
+                                }
+                            }
+                        });
+                    }
+                }
+            });
+        });
+    });
+</script>

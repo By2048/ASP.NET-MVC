@@ -1,0 +1,60 @@
+﻿@model SSLS.WebUI.Models.BrrowIndexViewModel
+
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    .sure {
+        float: right;
+        width: 100px;
+        margin: 0px 20px 0px auto;
+    }
+
+        .sure a {
+            width: 100px;
+            margin-right: 10px;
+        }
+
+       
+</style>
+
+
+<div>
+    <h3>请确认你需要借阅的书籍</h3>
+    <table  class="table myTable">
+        <thead>
+            <tr>
+                <th>产品</th>
+                <th>编号</th>
+                <th>作者</th>
+                <th>出版社</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.BookRack.Lines)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Authors)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Press)
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="btn btn-default sure">
+        @Html.ActionLink("确认", "BookRackBorrow")
+    </div>
+</div>

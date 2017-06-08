@@ -1,0 +1,13 @@
+﻿
+
+
+
+
+
+
+install-package Ninject –projectname Image.WebUI
+install-package Ninject.Web.Common –projectname Image.WebUI
+install-package Ninject.Mvc5 –projectname Image.WebUI
+install-package Entityframework –projectname Image.WebUI
+
+install-package PageList –projectname Image.WebUI

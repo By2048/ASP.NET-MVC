@@ -1,0 +1,29 @@
+﻿@model SSLS.Domain.Concrete.Reader
+@{
+    ViewBag.Title = "Recharge";
+    Layout = "~/Views/Shared/_Reader.cshtml";
+}
+
+
+<style>
+    .readerRecharge {
+        width: 300px;
+        margin:200px auto 0px auto;
+    }
+    h3{
+        text-align:center;
+    }
+    button{
+        width:100px;
+        margin:20px auto 0px 100px;
+    }
+</style>
+
+<div class="readerRecharge">
+    @using (Html.BeginForm("Recharge", "Reader"))
+    {
+        @Html.Hidden("readerId", Model.Id);
+        @Html.TextBox("rechargeMoney","", new { @class = "form-control", placeholder = "请输入你要充值的金额" })
+        <button class="btn btn-default" type="submit">确认充值</button>
+    }
+</div>

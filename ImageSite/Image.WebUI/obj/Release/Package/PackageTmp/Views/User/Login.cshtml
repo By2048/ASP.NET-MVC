@@ -1,0 +1,89 @@
+﻿@model Image.WebUI.Models.UserLoginModel
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <script src="~/scripts/jquery-1.10.2.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .login {
+            width: 300px;
+            height: 250px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            margin: -100px 0 0 -150px;
+            /*border: 1px solid red;*/
+        }
+
+        .password, .submite {
+            margin-top: 25px;
+        }
+
+            .username input, .password input {
+                height: 45px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .submite input {
+                width: 300px;
+                height: 45px;
+                font-size: 25px;
+                font-family: 华文彩云;
+            }
+
+        .validation-summary-errors ul li {
+            list-style: none;
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            margin-top: 25px;
+            list-style: none;
+            font-family: 华文彩云;
+        }
+    </style>
+
+    <script>
+        window.onload=function(){
+            document.getElementById("userName").value = "A001";
+            document.getElementById("passWord").value = "123";
+        }
+    </script>
+
+</head>
+
+
+<body>
+    <div class="login">
+        @using (Html.BeginForm())
+        {
+            <div class="username">
+                @Html.TextBoxFor(tmp => tmp.UserName, new { @id = "userName", @class = "form-control", placeholder = "请输入帐号" })
+            </div>
+            <div class="password">
+                @Html.PasswordFor(tmp => tmp.PassWord, new { @id="passWord",@class = "form-control", placeholder = "请输入密码" })
+            </div>
+            <div class="submite">
+                <input type="submit" value="Login" class="btn btn-default" />
+            </div>
+            @Html.ValidationSummary()
+        }
+    </div>
+</body>
+</html>

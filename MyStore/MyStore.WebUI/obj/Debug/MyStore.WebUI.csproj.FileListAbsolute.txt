@@ -1,0 +1,462 @@
+D:\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+D:\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+D:\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+D:\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+D:\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+D:\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+D:\MyStore\MyStore.WebUI\bin\Ninject.dll
+D:\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+D:\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+D:\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+D:\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+D:\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+D:\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+D:\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+D:\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+D:\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+D:\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+D:\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+D:\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+D:\MyStore\MyStore.WebUI\bin\Ninject.xml
+D:\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+D:\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+D:\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+D:\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+D:\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+D:\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+D:\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+D:\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+D:\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+D:\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+D:\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+D:\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+D:\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+D:\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+D:\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\Ninject.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\Ninject.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+C:\Users\luwen\Desktop\work\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\Ninject.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\Ninject.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+C:\Users\Administrator\Desktop\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\Ninject.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\Ninject.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+E:\Desktop\MyStore V4.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+C:\Users\Administrator\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+E:\Desktop\MyStore V5.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+E:\Desktop\MyStore V6.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+C:\Users\Administrator\Desktop\新建文件夹\MyStore V6.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\Ninject.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\Ninject.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Desktop\MyStore V7.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\Microsoft.Web.Infrastructure.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\Ninject.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\Ninject.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+E:\Desktop\MyStore V8.0 (1)\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\Ninject.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\Ninject.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+C:\Users\Administrator\Desktop\MyStore V8.0\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll.config
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\MyStore.WebUI.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\MyStore.WebUI.pdb
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\MyStore.Domain.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\MyStore.Domain.pdb
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\EntityFramework.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\Ninject.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\zh-Hans\EntityFramework.resources.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.csprojResolveAssemblyReference.cache
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\obj\Debug\MyStore.WebUI.pdb
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\EntityFramework.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\EntityFramework.SqlServer.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\Ninject.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\Ninject.Web.Common.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\Ninject.Web.Mvc.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Helpers.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Mvc.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Razor.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Webpages.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\WebActivatorEx.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Razor.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Webpages.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Deployment.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Webpages.Razor.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Helpers.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\System.Web.Mvc.xml
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.resources.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\ASP.NET-MVC\MyStore\MyStore.WebUI\bin\zh-Hans\System.Web.Mvc.resources.dll

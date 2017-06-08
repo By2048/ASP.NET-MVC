@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm("Test", "Home", FormMethod.Post))
+        {
+
+            <input id="name" />
+            <br />
+            <br />
+            <input id="ButtonUpload" type="submit" value="提交" />
+        }
+    </div>
+</body>
+</html>
+
+
+

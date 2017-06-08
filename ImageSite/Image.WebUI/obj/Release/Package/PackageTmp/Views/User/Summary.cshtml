@@ -1,0 +1,13 @@
+﻿@model Image.EF.Concrete.Users
+
+@if (Model.Id == 0)
+{
+    @Html.ActionLink("登录", "Login", "User", new { @class = "btn btn-default" })
+}
+else
+{
+    @Html.ActionLink("欢迎 " + @Model.UserName, "UserInfo", "User",null, new { @class = "btn btn-default welcome" })
+}
+
+
+

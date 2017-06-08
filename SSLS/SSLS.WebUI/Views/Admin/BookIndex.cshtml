@@ -1,0 +1,61 @@
+﻿@model SSLS.WebUI.Models.BookListViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<style>
+    .myTable{
+        width:900px;
+        margin:0px auto 0px auto;
+    }
+    h3{
+        text-align:center;
+    }
+     .page{
+         margin-top:10px;
+    }
+</style>
+
+<h3>图书管理</h3>
+
+<table class="table myTable">
+    <tr>             
+        <th>
+            Name
+        </th>
+        <th>
+            Authors
+        </th>
+        <th>
+            Press
+        </th> 
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Books) {
+    <tr>        
+        <td>
+            @Html.ActionLink(item.Name,"EditBook",new {bookId=item.Id})
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Authors)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Press)
+        </td>     
+        <td>            
+           @using (Html.BeginForm("DeleteBook", "Admin"))
+            {
+               @Html.Hidden("bookId",item.Id)
+               <input type="submit" class="btn btn-default" value="Delete"/>
+            }
+        </td>
+    </tr>
+}
+
+</table>
+<div class="page">
+    @Html.PageLinks(Model.pagingInfo, x => Url.Action("BookIndex", new {  page = x }))
+</div>

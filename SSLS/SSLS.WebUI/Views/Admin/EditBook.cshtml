@@ -1,0 +1,53 @@
+﻿@model SSLS.Domain.Concrete.Book
+
+@{
+    ViewBag.Title = "EditBook";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<style>
+    .editBook {
+        width: 300px;
+        margin: 100px auto 0px auto;
+    }
+    h3{
+        text-align:center;
+    }
+    span {
+        font-size: 18px;
+    }
+
+    input {
+        width: 300px;
+        margin: 0px auto 10px auto;
+    }
+
+    select {
+        width: 300px;
+        margin: 0px auto 10px auto;
+    }
+
+    button {
+        width: 100px;
+        margin: 10px 0px 0px 100px;
+    }
+
+</style>
+
+
+<div class="editBook">
+    @using (Html.BeginForm("EditBook", "Admin", FormMethod.Post))
+    {
+        @Html.HiddenFor(model => model.Id)
+        <span>Name</span>
+        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+        <span>Category</span>
+        @Html.DropDownListFor(model => model.CategoryID, ViewBag.CategoryList as IEnumerable<SelectListItem>, new { @class = "form-control" })
+        <span>Author</span>
+        @Html.EditorFor(model => model.Authors, new { htmlAttributes = new { @class = "form-control" } })
+        <span>Press</span>
+        @Html.EditorFor(model => model.Press, new { htmlAttributes = new { @class = "form-control" } })
+        <button type="submit" class="btn btn-default">保存</button>
+    }
+</div>
+

@@ -1,0 +1,41 @@
+﻿@model SSLS.Domain.Concrete.Category
+
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+
+
+<style>
+    .addCategory {
+        width: 300px;
+        margin: 180px auto 0px auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    input {
+        width: 300px;
+        margin: 0px auto 10px auto;
+    }
+
+    button {
+        width: 100px;
+        margin: 10px 0px 0px 100px;
+    }
+</style>
+
+
+<div class="addCategory">
+    <h3>AddCategory</h3>
+    @using (Html.BeginForm("AddCategory", "Admin", FormMethod.Post))
+    {
+        @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = "分类名" })
+        @Html.TextBoxFor(model => model.Description, new { @class = "form-control", placeholder = "分类简介" })
+        <button type="submit" class="btn btn-default">保存</button>
+
+    }
+</div>

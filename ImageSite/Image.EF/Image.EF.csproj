@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70A2ED58-926E-4058-8747-6A6BC3346D7F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Image.EF</RootNamespace>
+    <AssemblyName>Image.EF</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IFavoritesReopository.cs" />
+    <Compile Include="Abstract\IUsersReopository.cs" />
+    <Compile Include="Abstract\IFoldersReopository.cs" />
+    <Compile Include="Abstract\IImagesReopository.cs" />
+    <Compile Include="Concrete\EFFavoritesReopository.cs" />
+    <Compile Include="Concrete\EFUsersReopository.cs" />
+    <Compile Include="Concrete\EFFoldersReopository.cs" />
+    <Compile Include="Concrete\EFImagesReopository.cs" />
+    <Compile Include="Concrete\Favorites.cs">
+      <DependentUpon>ImageSite.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Folders.cs">
+      <DependentUpon>ImageSite.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Images.cs">
+      <DependentUpon>ImageSite.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\ImageSite.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageSite.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\ImageSite.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageSite.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\ImageSite.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageSite.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\Users.cs">
+      <DependentUpon>ImageSite.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Backup\sql.txt" />
+    <Content Include="Concrete\ImageSite.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ImageSite.edmx</DependentUpon>
+      <LastGenOutput>ImageSite.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Concrete\ImageSite.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ImageSite.edmx</DependentUpon>
+      <LastGenOutput>ImageSite.cs</LastGenOutput>
+    </Content>
+    <None Include="App.Config" />
+    <None Include="ClassDiagram1.cd" />
+    <EntityDeploy Include="Concrete\ImageSite.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ImageSite.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Concrete\ImageSite.edmx.diagram">
+      <DependentUpon>ImageSite.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Backup\backup.txt" />
+    <Content Include="Backup\package.txt" />
+    <Content Include="Backup\github.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

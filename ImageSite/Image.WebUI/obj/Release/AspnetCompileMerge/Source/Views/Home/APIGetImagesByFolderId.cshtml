@@ -1,0 +1,22 @@
+﻿
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        //初始化加载是否添加收藏
+        $.ajax({
+            type: "POST",
+            url: "/Favorite/IsAddFavorites",
+            data: {
+                folderId:10,
+            },
+            success: function (data) {
+                alert(data);
+            }
+        });
+    });
+</script>
+
+
+<input id="btnget" type="button" value="加载数据" />

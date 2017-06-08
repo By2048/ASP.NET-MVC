@@ -1,0 +1,48 @@
+﻿@model IEnumerable<SSLS.Domain.Concrete.Category>
+
+@{
+    ViewBag.Title = "CategoryIndex";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+
+<style>
+    .myTable {
+        width: 900px;
+        margin: 0px auto 0px auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+    td a{
+        font-size:18px;
+    }
+</style>
+
+<h3>分类管理</h3>
+
+<table class="table myTable">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(item.Name, "EditCategory", new { categoryId = item.Id })
+            </td>
+            <td>
+                @using (Html.BeginForm("DeleteCategory", "Admin"))
+                {
+                    @Html.Hidden("categoryId", item.Id)
+                    <input type="submit" class="btn btn-default" value="Delete" />
+                }
+            </td>
+        </tr>
+    }
+</table>

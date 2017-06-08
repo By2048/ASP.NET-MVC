@@ -1,0 +1,138 @@
+﻿@model SSLS.WebUI.Models.MyFineViewModel
+@{
+    ViewBag.Title = "MyFine";
+    Layout = "~/Views/Shared/_Reader.cshtml";
+}
+
+<script>
+        $(document).ready(function () {
+            $(".noFine").hide();
+            $(".isFine").hide();
+        });
+        $(function(){
+            $("#noFine").click(function () {
+                $(".noFine").show();
+                $(".isFine").hide();
+            })
+            $("#isFine").click(function () {
+                $(".isFine").show();
+                $(".noFine").hide();
+            })
+            $("#pay").click(function () {
+                var info = confirm("是否确定缴纳罚款")
+                if (info == false) {
+                    return false;
+                }
+            })
+        })
+</script>
+<style>
+    .fineMain {
+        width:900px;
+        margin:50px auto 0px auto;
+    }
+
+    .fineMenu {
+        width:400px;
+        margin:0 auto;
+    }
+    .fineMenu span{
+        margin-right:15px;
+    }
+</style>
+
+
+<div class="fineMain">
+    <div class="fineMenu">
+        <span id="noFine" class="btn btn-default">未缴纳</span>
+        <span id="isFine" class="btn btn-default">已缴纳</span>
+        <span id="sum" class="btn btn-default">欠费总额&nbsp; ￥@ViewBag.sum</span>
+    </div>
+
+    <table id="cartTable" class="table noFine">
+        <thead>
+            <tr>
+                <th>书名</th>
+                <th>超期天数</th>
+                <th>罚款金额</th>
+                <th>是否缴纳</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.NoFines)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BookName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OverTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FineMoney)
+                    </td>
+                    <td>
+                        @if (item.IsPay == "0")
+                        {
+                            <p>未缴纳</p>
+                        }
+                        else
+                        {
+                            <p>已缴纳</p>
+                        }
+                    </td>
+                    <td>
+                        @using (Html.BeginForm("PayFine", "Reader"))
+                        {
+                            @Html.Hidden("Id", item.Id);
+                            <button id="pay" class="btn btn-default" type="submit">缴纳罚款</button>
+                        }
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+    <table id="cartTable" class="table isFine">
+        <thead>
+            <tr>
+                <th>书名</th>
+                <th>超期天数</th>
+                <th>罚款金额</th>
+                <th>是否缴纳</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.IsFines)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BookName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OverTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FineMoney)
+                    </td>
+                    <td>
+                        @if (item.IsPay == "0")
+                        {
+                            <p>未缴纳</p>
+                        }
+                        else
+                        {
+                            <p>已缴纳</p>
+                        }
+                    </td>
+                    <td></td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+</div>

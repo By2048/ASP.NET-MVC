@@ -1,0 +1,95 @@
+﻿@model SSLS.WebUI.Models.BookRackViewModel
+
+@{
+    ViewBag.Title = "BookRack";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    $(function () {
+        $(".allcheck").unbind("click").click(function () {
+            $(".check").prop("checked", true);
+        });
+        $(".nocheck").unbind("click").click(function () {
+            $(".check").prop("checked", false);
+        });
+
+        $(".checkout").click(function () {
+            var s = "";
+            $(".check:checked").each(function () {
+                s += parseInt($(this).parent().next().next().text()) + "b";
+            })
+            //alert(s);
+            if (s == "") {
+                alert("请选择书籍！");
+                return false;
+            }
+            else {
+                s = $(this).attr("href") + s;
+                $(this).attr("href", s);
+            }
+        })
+    });
+</script>
+<style>
+    .sure {
+        float: right;
+        width: 350px;
+        margin: 20px 0px 0px auto;
+    }
+
+        .sure a {
+            width: 100px;
+            margin-right:10px;
+        }
+        .sure input {
+            width: 100px;
+            margin-right:10px;
+        }   
+</style>
+
+
+
+<h3>暂存架</h3>
+<table class="table myTable">
+    <thead>
+        <tr>
+            <th >      
+            </th>
+            <th>书名</th>
+            <th>编号</th>
+            <th>作者</th>
+            <th>出版社</th>
+            <th>价格</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.BookRack.Lines)
+            {
+
+            <tr>
+                <td>                    
+                    <input type="checkbox" class="check" name="check">
+                </td>
+                <td>@item.Name</td>
+                <td>@item.Id</td>
+                <td>@item.Authors</td>
+                <td>@item.Press</td>
+                <td>@item.Price</td>
+                <td>
+                    @using (Html.BeginForm("RemoveFromBookRack", "Borrow"))
+                    {
+                        @Html.Hidden("id", item.Id)
+                        @Html.HiddenFor(x => x.ReturnUrl);
+                        <button type="submit" class="btn btn-default"> 删除</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="sure">
+    <input class="btn btn-default allcheck" name="allcheck" type="button" value="全选" />
+    <input class="btn btn-default nocheck" name="nocheck" type="button" value="全不选" />
+    @Html.ActionLink("确认", "Checkout", new { ids = "b" }, new { @class = "btn btn-default checkout" })
+</div>
