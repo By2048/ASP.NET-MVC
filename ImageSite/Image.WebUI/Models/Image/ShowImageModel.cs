@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Image.EF.Concrete;
-using System.Collections;
+using PagedList;
 
 namespace Image.WebUI.Models
 {
-    public class UserAddToFavoritesModel
+    public class ShowImageModel
     {
-        public int FolderId { get; set; }
+        public IPagedList<Images> PagedListImage { get; set; }
     }
 }

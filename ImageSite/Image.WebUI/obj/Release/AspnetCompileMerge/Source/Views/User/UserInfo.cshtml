@@ -80,7 +80,7 @@
                     <tr>
                         <th scope="row">@cnt</th>
                         <td>@item.FolderId</td>
-                        <td>@item.FolderName</td>
+                        <td><a href=@Url.Action("ShowImage", "Image", new { folderId = @item.FolderId, imagePage = 1 })>@item.FolderName</a></td>
                         <td>@item.CollectionDate</td>
                         <td>@item.UserId</td>
                         <td>@item.UserName</td>
@@ -99,3 +99,5 @@
     </div>
 </body>
 </html>
+
+

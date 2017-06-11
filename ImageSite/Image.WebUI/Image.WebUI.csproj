@@ -165,12 +165,12 @@
     <Compile Include="Infrastructure\Binders\UserBinder.cs" />
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Models\FileModel.cs" />
-    <Compile Include="Models\UserAddToFavoritesModel.cs" />
-    <Compile Include="Models\UserInfoModel.cs" />
-    <Compile Include="Models\UserLoginModel.cs" />
-    <Compile Include="Models\HomeIndexModel.cs" />
-    <Compile Include="Models\ImageIndexModel.cs" />
-    <Compile Include="Models\NavMenuModel.cs" />
+    <Compile Include="Models\Image\ShowImageModel.cs" />
+    <Compile Include="Models\User\UserInfoModel.cs" />
+    <Compile Include="Models\User\UserLoginModel.cs" />
+    <Compile Include="Models\Home\HomeIndexModel.cs" />
+    <Compile Include="Models\Image\ImageIndexModel.cs" />
+    <Compile Include="Models\Nav\NavMenuModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +189,7 @@
     <Content Include="Views\Home\Test.cshtml" />
     <Content Include="Views\Home\APIGetAllFolders.cshtml" />
     <Content Include="Views\Home\APIGetImagesByFolderId.cshtml" />
+    <Content Include="Views\Image\ShowImage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

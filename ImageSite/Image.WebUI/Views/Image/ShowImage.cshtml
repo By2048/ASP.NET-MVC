@@ -1,0 +1,25 @@
+﻿@model Image.WebUI.Models.ShowImageModel
+
+@using PagedList.Mvc;
+
+<base href="http://192.168.155.1/" />
+
+@{
+    ViewBag.Title = "ShowImage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="content_right">
+    <div class="show_image">
+        @foreach (var item in Model.PagedListImage)
+        {
+            <span><img src="@item.Path" alt="@item.Name"/></span>
+        }
+    </div>
+    <div class="image_page_list">
+        @Html.PagedListPager(Model.PagedListImage, page => 
+                Url.Action("ShowImage", "Image",
+                new { folderId = ViewBag.FolderId, imagePage = page }))
+    </div>
+</div>

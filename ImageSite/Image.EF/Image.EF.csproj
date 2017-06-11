@@ -104,7 +104,6 @@
       <LastGenOutput>ImageSite.cs</LastGenOutput>
     </Content>
     <None Include="App.Config" />
-    <None Include="ClassDiagram1.cd" />
     <EntityDeploy Include="Concrete\ImageSite.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ImageSite.Designer.cs</LastGenOutput>

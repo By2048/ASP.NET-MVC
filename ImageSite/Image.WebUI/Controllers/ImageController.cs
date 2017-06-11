@@ -52,6 +52,25 @@ namespace Image.WebUI.Controllers
 
             return PartialView(viewModel);
         }
-        
+
+        public PartialViewResult ShowImage(int folderId, int imagePage=1)
+        {
+            int eachPageImageItem = 1;
+
+            IQueryable<Images> images = from image in imagesReopository.Images
+                                        where image.FolderId == folderId
+                                        orderby image.Id descending
+                                        select image;
+            IPagedList<Images> pagedListImage = images.ToList().ToPagedList(imagePage, eachPageImageItem);
+            ShowImageModel viewModel = new ShowImageModel
+            {
+                PagedListImage = pagedListImage,
+            };
+            ViewBag.FolderId = folderId;
+            ViewBag.ImagePage = imagePage;
+            return PartialView(viewModel);
+        }
+
+
     }
 }

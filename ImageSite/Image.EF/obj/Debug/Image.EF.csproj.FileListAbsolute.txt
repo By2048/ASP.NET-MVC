@@ -10,3 +10,15 @@ E:\Desktop\ImageSite\Image.EF\bin\Debug\zh-Hans\EntityFramework.SqlServer.resour
 E:\Desktop\ImageSite\Image.EF\obj\Debug\Image.EF.dll
 E:\Desktop\ImageSite\Image.EF\obj\Debug\Image.EF.pdb
 E:\Desktop\ImageSite\Image.EF\obj\Debug\Image.EF.csprojResolveAssemblyReference.cache
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\Image.EF.dll.config
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\Image.EF.dll
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\Image.EF.pdb
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\EntityFramework.dll
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\EntityFramework.SqlServer.dll
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\EntityFramework.xml
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\EntityFramework.SqlServer.xml
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\obj\Debug\Image.EF.csprojResolveAssemblyReference.cache
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\obj\Debug\Image.EF.dll
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\obj\Debug\Image.EF.pdb

@@ -31,7 +31,6 @@ namespace Image.WebUI.Controllers
         {
             HttpCookie cookie = HttpContext.Request.Cookies.Get("UserInfo");
 
-
             if (cookie != null)
             {
                 return View();

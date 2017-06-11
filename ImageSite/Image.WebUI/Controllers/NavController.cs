@@ -28,6 +28,7 @@ namespace Image.WebUI.Controllers
             IQueryable<Folders> folders = from folder in foldersReopository.Folders
                                           orderby folder.CreateDate descending
                                           select folder;
+
             if (keyWord != "")
                 folders = folders.Where(tmp => tmp.Name.Contains(keyWord));
 

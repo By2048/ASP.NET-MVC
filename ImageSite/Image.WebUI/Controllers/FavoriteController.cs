@@ -20,7 +20,6 @@ namespace Image.WebUI.Controllers
         }      
 
 
-
         [HttpPost]
         public JsonResult AddFavorites(int folderId)
         {

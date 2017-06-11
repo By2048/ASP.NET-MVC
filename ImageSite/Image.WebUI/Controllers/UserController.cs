@@ -92,6 +92,7 @@ namespace Image.WebUI.Controllers
             Users user = usersReopository.Users.FirstOrDefault(tmp => tmp.Id == userId);
             IQueryable<Favorites> favorites = favoritesReopository.Favorites.Where(tmp => tmp.UserId == user.Id);
 
+            
             UserInfoModel viewModel = new UserInfoModel
             {
                 User = user,
