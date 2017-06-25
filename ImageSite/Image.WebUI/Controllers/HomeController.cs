@@ -8,6 +8,7 @@ using Image.EF.Concrete;
 using Image.WebUI.Models;
 using PagedList;
 using System.IO;
+using Image.WebUI.Models.Home;
 
 namespace Image.WebUI.Controllers
 {
@@ -41,17 +42,13 @@ namespace Image.WebUI.Controllers
             }
         }
 
+
         public ActionResult TestIndex(int folderPage = 1, int imagePage = 1, int folderId = 0)
         {
             return View();
         }
 
-        //public ActionResult Upload()
-        //{
-        //    return View();
-        //}
 
-        //[HttpPost]
         public ActionResult Upload(/*HttpPostedFileBase files*/)
         {
             var files = Request.Files;
@@ -88,6 +85,8 @@ namespace Image.WebUI.Controllers
         {
             return View();
         }
+
+
 
         public JsonResult APIGetAllFolders()
         {

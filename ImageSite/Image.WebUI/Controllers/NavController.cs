@@ -8,6 +8,7 @@ using Image.EF.Concrete;
 using Image.WebUI.Models;
 using PagedList;
 using Image.WebUI.Models.Nav;
+using Image.WebUI.Models.Home;
 
 namespace Image.WebUI.Controllers
 {
@@ -45,7 +46,7 @@ namespace Image.WebUI.Controllers
                 KeyWord = keyWord,
                 FolderId = folderId
             };
-            
+
             ViewBag.FolderPage = folderPage;
             ViewBag.FolderId = folderId;
             ViewBag.ImagePage = imagePage;
@@ -55,32 +56,24 @@ namespace Image.WebUI.Controllers
         }
 
 
-        public PartialViewResult TestMenu(int folderPage = 1, int imagePage = 1, int folderId = 0)
+        //public PartialViewResult TestMenu(int folderPage = 1, int imagePage = 1, int folderId = 0)
+        public PartialViewResult TestMenu(int folderPage = 1,int imagePage=1,int folderId=0)
         {
             IQueryable<Folders> folders = from folder in foldersReopository.Folders
                                           orderby folder.CreateDate descending
                                           select folder;
-            if (folderId == 0)
-                folderId = folders.First().Id;
-
 
             PagingHelper<Folders> pageFolder = new PagingHelper<Folders>(10, folders);
             pageFolder.PageIndex = folderPage;
 
-            TestMenuModel viewModel = new TestMenuModel
-            {
-                PageFolder = pageFolder,
-                //FolderId = folderId
-            };
+            HomeIndexModel.PageFolder = pageFolder;
 
-            ViewBag.FolderPage = folderPage;
-            ViewBag.FolderId = folderId;
-            ViewBag.ImagePage = imagePage;
+            //HomeIndexModel viewModel = new HomeIndexModel(pageFolder);
 
-            return PartialView(viewModel);
+            return PartialView();
         }
 
-      
+
 
     }
 }

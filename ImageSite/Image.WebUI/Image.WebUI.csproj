@@ -165,14 +165,13 @@
     <Compile Include="Infrastructure\Binders\UserBinder.cs" />
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Models\FileModel.cs" />
-    <Compile Include="Models\Home\TestHomeIndexModel.cs" />
+    <Compile Include="Models\Home\HomeIndexModel.cs" />
     <Compile Include="Models\Image\ShowImageModel.cs" />
     <Compile Include="Models\Image\TestImageIndexModel.cs" />
     <Compile Include="Models\Nav\TestMenuModel.cs" />
     <Compile Include="Models\PagingHelper.cs" />
     <Compile Include="Models\User\UserInfoModel.cs" />
     <Compile Include="Models\User\UserLoginModel.cs" />
-    <Compile Include="Models\Home\HomeIndexModel.cs" />
     <Compile Include="Models\Image\ImageIndexModel.cs" />
     <Compile Include="Models\Nav\NavMenuModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

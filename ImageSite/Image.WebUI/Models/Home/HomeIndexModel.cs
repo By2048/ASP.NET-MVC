@@ -1,18 +1,38 @@
-﻿using System;
+﻿using Image.EF.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Image.EF.Concrete;
-using System.Collections;
-using PagedList;
 
-namespace Image.WebUI.Models
+namespace Image.WebUI.Models.Home
 {
-    public class HomeIndexModel
+    static public class HomeIndexModel
     {
-        public IPagedList<Images> PagedListImage { get; set; }
-        public IPagedList<Folders> PagedListFolder { get; set; }
-        public string KeyWord { get; set; }
 
+        static public PagingHelper<Folders> PageFolder { get; set; }
+        static public PagingHelper<Images> PageImage { get; set; }
+
+        static public string KeyWord { get; set; }
+
+        static public int FolderId { get; set; }
+
+
+        //private GetFolderId()
+
+        //public HomeIndexModel(PagingHelper<Folders> pageFolder, PagingHelper<Images> pageImage)
+        //{
+        //    PageFolder = pageFolder;
+        //    PageImage = pageImage;
+        //}
+
+        //public HomeIndexModel(PagingHelper<Folders> pageFolder)
+        //{
+        //    PageFolder = pageFolder;
+        //}
+
+        //public HomeIndexModel(PagingHelper<Images> pageImage)
+        //{
+        //    PageImage = pageImage;
+        //}
     }
 }

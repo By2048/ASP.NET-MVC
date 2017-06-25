@@ -1,7 +1,4 @@
-﻿@using Image.WebUI.Models
-@using Image.EF.Concrete;
-
-@model Image.WebUI.Models.Nav.TestMenuModel
+﻿
 
 @{
     Layout = null;
@@ -10,34 +7,47 @@
 
 <h2>TestMenu</h2>
 
-@foreach (var item in Model.PageFolder.GetPagingData())
+@foreach (var item in Image.WebUI.Models.Home.HomeIndexModel.PageFolder.GetPagingData())
 {
     <p>ID:@item.Id Name:@item.Name</p>
 }
 
 @{
-    int curPage = int.Parse(ViewBag.FolderPage.ToString());
-    string nextPage = (curPage + 1).ToString();
-    string prevPage = (curPage - 1).ToString();
+    int curPage = Image.WebUI.Models.Home.HomeIndexModel.PageFolder.PageIndex;
+    int nextPage = curPage + 1;
+    int prevPage = curPage - 1;
+
+    int folderId = Image.WebUI.Models.Home.HomeIndexModel.FolderId;
+
+    int imagePage;
+    if (Image.WebUI.Models.Home.HomeIndexModel.PageImage != null)
+    {
+        imagePage = Image.WebUI.Models.Home.HomeIndexModel.PageImage.PageIndex;
+    }
+    else
+    {
+        imagePage = 1;
+    }
+
 }
 
 <p>
-    @if (Model.PageFolder.HasPrev)
+    @if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder.HasPrev)
     {
         @*<a href="@Url.Action("TestIndex", "Home", new { folderPage = Model.PageFolder.PageIndex - 1 })">上一页</a>*@
         <a href="@Url.Action("TestIndex", "Home",
-                new { folderPage = prevPage, folderId = ViewBag.FolderId, imagePage = ViewBag.ImagePage})">上一页</a>
+                new { folderPage = prevPage, folderId = folderId, imagePage = imagePage})">上一页</a>
 
     }
     else
     {
         <em style="color:Gray">上一页</em>
     }
-    @if (Model.PageFolder.HasNext)
+    @if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder.HasNext)
     {
         @*<a href="@Url.Action("TestIndex", "Home", new { folderPage = Model.PageFolder.PageIndex + 1 })">下一页</a>*@
         <a href="@Url.Action("TestIndex", "Home",
-                new { folderPage =nextPage, folderId = ViewBag.FolderId, imagePage =ViewBag.ImagePage})">下一页</a>
+                new { folderPage =nextPage, folderId = folderId, imagePage =imagePage})">下一页</a>
     }
     else
     {

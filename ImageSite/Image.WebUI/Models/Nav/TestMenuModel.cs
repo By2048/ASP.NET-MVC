@@ -9,6 +9,5 @@ namespace Image.WebUI.Models.Nav
     public class TestMenuModel
     {
         public PagingHelper<Folders> PageFolder { get; set; }
-        public int FolderId { get; set; }
     }
 }
