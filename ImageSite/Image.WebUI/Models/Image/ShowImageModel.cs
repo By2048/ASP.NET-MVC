@@ -10,5 +10,7 @@ namespace Image.WebUI.Models
     public class ShowImageModel
     {
         public IPagedList<Images> PagedListImage { get; set; }
+
+
     }
 }

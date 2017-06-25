@@ -1,0 +1,46 @@
+﻿
+@model Image.WebUI.Models.Image.TestImageIndexModel
+
+@{
+    ViewBag.Title = "TestIndex";
+    Layout = null;
+}
+
+<h2>TestIndex</h2>
+
+
+<h2>TestMenu</h2>
+
+@foreach (var item in Model.PageImage.GetPagingData())
+{
+    <p>ID:@item.Id Name:@item.Name</p>
+}
+
+@{ 
+    int curPage = int.Parse(ViewBag.ImagePage.ToString());
+    string prevPage = (curPage - 1).ToString();
+    string nextPage = (curPage + 1).ToString();
+}
+<p>
+    @if (Model.PageImage.HasPrev)
+    {
+        
+        <a href="@Url.Action("TestIndex", "Home", 
+                new { folderPage = ViewBag.FolderPage, folderId = ViewBag.FolderId, imagePage = prevPage})">上一页</a>
+          
+    }
+    else
+    {
+        <em style="color:Gray">上一页</em>
+    }
+    @if (Model.PageImage.HasNext)
+    {
+        <a href="@Url.Action("TestIndex", "Home", 
+                new { folderPage = ViewBag.FolderPage, folderId = ViewBag.FolderId, imagePage = nextPage})">下一页</a>
+    }
+    else
+    {
+        <em style="color:Gray">下一页</em>
+    }
+</p>
+

@@ -39,8 +39,13 @@ namespace Image.WebUI.Controllers
             {
                 return RedirectToAction("Login", "User");
             }
-
         }
+
+        public ActionResult TestIndex(int folderPage = 1, int imagePage = 1, int folderId = 0)
+        {
+            return View();
+        }
+
         //public ActionResult Upload()
         //{
         //    return View();

@@ -7,6 +7,7 @@ using Image.EF.Abstract;
 using Image.EF.Concrete;
 using Image.WebUI.Models;
 using PagedList;
+using Image.WebUI.Models.Image;
 
 namespace Image.WebUI.Controllers
 {
@@ -52,6 +53,39 @@ namespace Image.WebUI.Controllers
 
             return PartialView(viewModel);
         }
+
+        public PartialViewResult TestIndex(int folderPage = 1, int imagePage = 1, int folderId = 0)
+        {
+            IQueryable<Folders> folders = from folder in foldersReopository.Folders
+                                          orderby folder.CreateDate descending
+                                          select folder;
+
+            if (folderId == 0)
+                folderId = folders.First().Id;
+
+            IQueryable<Images> images = from image in imagesReopository.Images
+                                        where image.FolderId == folderId
+                                        orderby image.Id descending
+                                        select image;
+
+
+
+            PagingHelper<Images> pageImage= new PagingHelper<Images>(10, images);
+            pageImage.PageIndex = imagePage;      
+
+            TestImageIndexModel viewModel = new TestImageIndexModel
+            {
+                PageImage = pageImage
+            };
+
+            ViewBag.FolderPage = folderPage;
+            ViewBag.FolderId = folderId;
+            ViewBag.ImagePage = imagePage;
+
+            return PartialView(viewModel);
+        }
+
+
 
         public PartialViewResult ShowImage(int folderId, int imagePage=1)
         {
