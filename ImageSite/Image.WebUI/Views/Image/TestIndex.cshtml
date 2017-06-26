@@ -1,5 +1,4 @@
 ﻿
-
 @{
     ViewBag.Title = "TestIndex";
     Layout = null;
@@ -15,7 +14,7 @@
     <p>ID:@item.Id Name:@item.Name</p>
 }
 
-@{ 
+@{
     int curPage = Image.WebUI.Models.Home.HomeIndexModel.PageImage.PageIndex;
     int nextPage = curPage + 1;
     int prevPage = curPage - 1;
@@ -23,7 +22,7 @@
     int folderId = Image.WebUI.Models.Home.HomeIndexModel.FolderId;
     int folderPage;
 
-    if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder!=null)
+    if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder != null)
     {
         folderPage = Image.WebUI.Models.Home.HomeIndexModel.PageFolder.PageIndex;
     }
@@ -32,14 +31,25 @@
         folderPage = 1;
     }
 
+    string keyWord;
+    if (Image.WebUI.Models.Home.HomeIndexModel.KeyWord != "")
+    {
+        keyWord = Image.WebUI.Models.Home.HomeIndexModel.KeyWord;
+    }
+    else
+    {
+        keyWord = "";
+    }
+
+
 }
 <p>
     @if (Image.WebUI.Models.Home.HomeIndexModel.PageImage.HasPrev)
     {
-        
-        <a href="@Url.Action("TestIndex", "Home", 
-                new { folderPage = folderPage, folderId =folderId, imagePage = prevPage})">上一页</a>
-          
+
+        <a href="@Url.Action("TestIndex", "Home",
+                new { folderPage = folderPage, folderId =folderId, imagePage = prevPage,keyWord=keyWord})">上一页</a>
+
     }
     else
     {
@@ -47,8 +57,8 @@
     }
     @if (Image.WebUI.Models.Home.HomeIndexModel.PageImage.HasNext)
     {
-        <a href="@Url.Action("TestIndex", "Home", 
-                new { folderPage = folderPage, folderId =folderId, imagePage = nextPage})">下一页</a>
+        <a href="@Url.Action("TestIndex", "Home",
+                new { folderPage = folderPage, folderId =folderId, imagePage = nextPage,keyWord=keyWord})">下一页</a>
     }
     else
     {

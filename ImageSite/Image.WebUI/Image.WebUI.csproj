@@ -167,8 +167,6 @@
     <Compile Include="Models\FileModel.cs" />
     <Compile Include="Models\Home\HomeIndexModel.cs" />
     <Compile Include="Models\Image\ShowImageModel.cs" />
-    <Compile Include="Models\Image\TestImageIndexModel.cs" />
-    <Compile Include="Models\Nav\TestMenuModel.cs" />
     <Compile Include="Models\PagingHelper.cs" />
     <Compile Include="Models\User\UserInfoModel.cs" />
     <Compile Include="Models\User\UserLoginModel.cs" />

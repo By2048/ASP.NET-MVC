@@ -7,7 +7,6 @@ using Image.EF.Abstract;
 using Image.EF.Concrete;
 using Image.WebUI.Models;
 using PagedList;
-using Image.WebUI.Models.Nav;
 using Image.WebUI.Models.Home;
 
 namespace Image.WebUI.Controllers
@@ -56,19 +55,24 @@ namespace Image.WebUI.Controllers
         }
 
 
-        //public PartialViewResult TestMenu(int folderPage = 1, int imagePage = 1, int folderId = 0)
-        public PartialViewResult TestMenu(int folderPage = 1,int imagePage=1,int folderId=0)
+        public PartialViewResult TestMenu(int folderPage = 1,int imagePage=1,int folderId=0, string keyWord = "")
         {
+            //keyWord = "ROSI写真情趣系列 蜜桃臀配丁字裤这个角度简直不敢直视";
             IQueryable<Folders> folders = from folder in foldersReopository.Folders
                                           orderby folder.CreateDate descending
                                           select folder;
+            if (keyWord != "")
+                folders = folders.Where(tmp => tmp.Name.Contains(keyWord));
+
+            if (folderId == 0)
+                HomeIndexModel.FolderId= folders.First().Id;
 
             PagingHelper<Folders> pageFolder = new PagingHelper<Folders>(10, folders);
             pageFolder.PageIndex = folderPage;
 
             HomeIndexModel.PageFolder = pageFolder;
+            HomeIndexModel.KeyWord = keyWord;
 
-            //HomeIndexModel viewModel = new HomeIndexModel(pageFolder);
 
             return PartialView();
         }

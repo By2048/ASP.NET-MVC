@@ -29,14 +29,22 @@
         imagePage = 1;
     }
 
+    string keyWord;
+    if (Image.WebUI.Models.Home.HomeIndexModel.KeyWord != "")
+    {
+        keyWord = Image.WebUI.Models.Home.HomeIndexModel.KeyWord;
+    }
+    else
+    {
+        keyWord = "";
+    }
 }
 
 <p>
     @if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder.HasPrev)
     {
-        @*<a href="@Url.Action("TestIndex", "Home", new { folderPage = Model.PageFolder.PageIndex - 1 })">上一页</a>*@
         <a href="@Url.Action("TestIndex", "Home",
-                new { folderPage = prevPage, folderId = folderId, imagePage = imagePage})">上一页</a>
+                new { folderPage = prevPage, folderId = folderId, imagePage = imagePage,keyWord=keyWord})">上一页</a>
 
     }
     else
@@ -45,9 +53,8 @@
     }
     @if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder.HasNext)
     {
-        @*<a href="@Url.Action("TestIndex", "Home", new { folderPage = Model.PageFolder.PageIndex + 1 })">下一页</a>*@
         <a href="@Url.Action("TestIndex", "Home",
-                new { folderPage =nextPage, folderId = folderId, imagePage =imagePage})">下一页</a>
+                new { folderPage =nextPage, folderId = folderId, imagePage =imagePage,keyWord=keyWord})">下一页</a>
     }
     else
     {

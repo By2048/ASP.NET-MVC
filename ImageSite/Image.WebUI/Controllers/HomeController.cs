@@ -43,7 +43,7 @@ namespace Image.WebUI.Controllers
         }
 
 
-        public ActionResult TestIndex(int folderPage = 1, int imagePage = 1, int folderId = 0)
+        public ActionResult TestIndex(int folderPage = 1, int imagePage = 1, int folderId = 0,string keyWord="")
         {
             return View();
         }

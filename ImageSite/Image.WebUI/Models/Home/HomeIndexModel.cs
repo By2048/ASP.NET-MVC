@@ -16,23 +16,5 @@ namespace Image.WebUI.Models.Home
 
         static public int FolderId { get; set; }
 
-
-        //private GetFolderId()
-
-        //public HomeIndexModel(PagingHelper<Folders> pageFolder, PagingHelper<Images> pageImage)
-        //{
-        //    PageFolder = pageFolder;
-        //    PageImage = pageImage;
-        //}
-
-        //public HomeIndexModel(PagingHelper<Folders> pageFolder)
-        //{
-        //    PageFolder = pageFolder;
-        //}
-
-        //public HomeIndexModel(PagingHelper<Images> pageImage)
-        //{
-        //    PageImage = pageImage;
-        //}
     }
 }

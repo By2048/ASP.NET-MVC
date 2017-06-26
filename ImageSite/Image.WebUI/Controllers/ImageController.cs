@@ -7,7 +7,6 @@ using Image.EF.Abstract;
 using Image.EF.Concrete;
 using Image.WebUI.Models;
 using PagedList;
-using Image.WebUI.Models.Image;
 using Image.WebUI.Models.Home;
 
 namespace Image.WebUI.Controllers
@@ -55,12 +54,14 @@ namespace Image.WebUI.Controllers
             return PartialView(viewModel);
         }
 
-        //public PartialViewResult TestIndex(int folderPage = 1, int imagePage = 1, int folderId = 0)
-        public PartialViewResult TestIndex(int folderPage = 1, int imagePage = 1, int folderId = 0)
+        public PartialViewResult TestIndex(int folderPage = 1, int imagePage = 1, int folderId = 0,string keyWord="")
         {
             IQueryable<Folders> folders = from folder in foldersReopository.Folders
                                           orderby folder.CreateDate descending
                                           select folder;
+
+            if (keyWord != "")
+                folders = folders.Where(tmp => tmp.Name.Contains(keyWord));
 
             if (folderId == 0)
                 folderId = folders.First().Id;
@@ -74,9 +75,7 @@ namespace Image.WebUI.Controllers
             pageImage.PageIndex = imagePage;
 
             HomeIndexModel.PageImage = pageImage;
-
-
-            //HomeIndexModel viewModel = new HomeIndexModel(pageImage);
+            HomeIndexModel.KeyWord = keyWord;
 
             return PartialView();
         }

@@ -12,7 +12,5 @@ namespace Image.WebUI.Models
     {
         public IPagedList<Images> PagedListImage { get; set; }
         public string KeyWord { get; set; }
-
-
     }
 }
