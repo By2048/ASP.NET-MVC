@@ -1,0 +1,14 @@
+E:\learn\12_No.2\Subway\DataModel\bin\Debug\DataModel.dll
+E:\learn\12_No.2\Subway\DataModel\bin\Debug\DataModel.pdb
+E:\learn\12_No.2\Subway\DataModel\obj\Debug\ResolveAssemblyReference.cache
+E:\learn\12_No.2\Subway\DataModel\obj\Debug\DataModel.dll
+E:\learn\12_No.2\Subway\DataModel\obj\Debug\DataModel.pdb
+D:\MyWorld\项目实训\Subway\DataModel\bin\Debug\DataModel.dll
+D:\MyWorld\项目实训\Subway\DataModel\bin\Debug\DataModel.pdb
+D:\MyWorld\项目实训\Subway\DataModel\obj\Debug\DataModel.dll
+D:\MyWorld\项目实训\Subway\DataModel\obj\Debug\DataModel.pdb
+E:\Desktop\Subway\DataModel\bin\Debug\DataModel.dll
+E:\Desktop\Subway\DataModel\bin\Debug\DataModel.pdb
+E:\Desktop\Subway\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
+E:\Desktop\Subway\DataModel\obj\Debug\DataModel.dll
+E:\Desktop\Subway\DataModel\obj\Debug\DataModel.pdb
