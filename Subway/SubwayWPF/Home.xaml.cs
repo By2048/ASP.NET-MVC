@@ -215,6 +215,7 @@ namespace SubwayWPF
             this.grdBingMap.Visibility = System.Windows.Visibility.Collapsed;
             this.DispXCDetail();
         }
+
         #endregion
         #region 出行路线详细表格
         private void DispXCDetail()

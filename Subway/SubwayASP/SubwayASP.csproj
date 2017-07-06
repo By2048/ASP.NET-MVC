@@ -19,6 +19,12 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -109,15 +115,18 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessObject\BusinessObject.csproj">
-      <Project>{B47ABCB5-CE05-4C80-8D50-51F335D8E7FB}</Project>
+      <Project>{b47abcb5-ce05-4c80-8d50-51f335d8e7fb}</Project>
       <Name>BusinessObject</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{ebb96252-2a38-425d-9109-5f8cb67cd46c}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataModel\DataModel.csproj">
-      <Project>{B6923D91-DFEB-4189-B94D-62FC1B107522}</Project>
+      <Project>{b6923d91-dfeb-4189-b94d-62fc1b107522}</Project>
       <Name>DataModel</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

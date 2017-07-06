@@ -25,3 +25,12 @@ E:\Desktop\Subway\BusinessObject\bin\Debug\DataModel.pdb
 E:\Desktop\Subway\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
 E:\Desktop\Subway\BusinessObject\obj\Debug\BusinessObject.dll
 E:\Desktop\Subway\BusinessObject\obj\Debug\BusinessObject.pdb
+E:\Desktop\ASP.NET-MVC\Subway\BusinessObject\bin\Debug\BusinessObject.dll
+E:\Desktop\ASP.NET-MVC\Subway\BusinessObject\bin\Debug\BusinessObject.pdb
+E:\Desktop\ASP.NET-MVC\Subway\BusinessObject\bin\Debug\DataAccessLayer.dll
+E:\Desktop\ASP.NET-MVC\Subway\BusinessObject\bin\Debug\DataModel.dll
+E:\Desktop\ASP.NET-MVC\Subway\BusinessObject\bin\Debug\DataAccessLayer.pdb
+E:\Desktop\ASP.NET-MVC\Subway\BusinessObject\bin\Debug\DataModel.pdb
+E:\Desktop\ASP.NET-MVC\Subway\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
+E:\Desktop\ASP.NET-MVC\Subway\BusinessObject\obj\Debug\BusinessObject.dll
+E:\Desktop\ASP.NET-MVC\Subway\BusinessObject\obj\Debug\BusinessObject.pdb

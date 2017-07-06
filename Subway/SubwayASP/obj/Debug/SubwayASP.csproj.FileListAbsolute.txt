@@ -32,3 +32,15 @@ E:\Desktop\Subway\SubwayASP\bin\DataAccessLayer.pdb
 E:\Desktop\Subway\SubwayASP\obj\Debug\SubwayASP.csprojResolveAssemblyReference.cache
 E:\Desktop\Subway\SubwayASP\obj\Debug\SubwayASP.dll
 E:\Desktop\Subway\SubwayASP\obj\Debug\SubwayASP.pdb
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\bin\SubwayASP.dll.config
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\bin\SubwayASP.dll
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\bin\SubwayASP.pdb
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\bin\BusinessObject.dll
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\bin\DataModel.dll
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\bin\DataAccessLayer.dll
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\bin\BusinessObject.pdb
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\bin\DataModel.pdb
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\bin\DataAccessLayer.pdb
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\obj\Debug\SubwayASP.csprojResolveAssemblyReference.cache
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\obj\Debug\SubwayASP.dll
+E:\Desktop\ASP.NET-MVC\Subway\SubwayASP\obj\Debug\SubwayASP.pdb

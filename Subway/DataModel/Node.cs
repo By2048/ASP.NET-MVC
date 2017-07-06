@@ -72,7 +72,7 @@ namespace SubwayQuery.DataModel
         {
             for (int i = 0; i < EdgeList.Count; i++)
             {
-                Edge e=EdgeList[i] as Edge;
+                Edge e = EdgeList[i] as Edge;
                 if (e.EdgeDirection == DataDirection.priv)
                     return e;
             }

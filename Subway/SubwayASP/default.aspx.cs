@@ -52,8 +52,7 @@ namespace SubwayASP
             string tmpRet = "";
             if (bizPlanPath.ValideData(startSta, targetSta, ref tmpRet) == false)
             {
-                ClientScript.RegisterClientScriptBlock(this.GetType(), "Message",
-                    "<script>alert('" + tmpRet + "');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "Message","<script>alert('" + tmpRet + "');</script>");
                 return;
             }
 
@@ -61,8 +60,7 @@ namespace SubwayASP
             ret=bizPlanPath.GetPlanPath(startSta,targetSta,strOption);
             if(ret==null)
             {
-                ClientScript.RegisterClientScriptBlock(this.GetType(), "Message",
-                    "<script>alert('没有找到合适的路线！');</script>");
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "Message","<script>alert('没有找到合适的路线！');</script>");
                 return;
             }
             //显示标记出现路线后的地铁线路

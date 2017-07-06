@@ -12,3 +12,8 @@ E:\Desktop\Subway\DataModel\bin\Debug\DataModel.pdb
 E:\Desktop\Subway\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
 E:\Desktop\Subway\DataModel\obj\Debug\DataModel.dll
 E:\Desktop\Subway\DataModel\obj\Debug\DataModel.pdb
+E:\Desktop\ASP.NET-MVC\Subway\DataModel\bin\Debug\DataModel.dll
+E:\Desktop\ASP.NET-MVC\Subway\DataModel\bin\Debug\DataModel.pdb
+E:\Desktop\ASP.NET-MVC\Subway\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
+E:\Desktop\ASP.NET-MVC\Subway\DataModel\obj\Debug\DataModel.dll
+E:\Desktop\ASP.NET-MVC\Subway\DataModel\obj\Debug\DataModel.pdb

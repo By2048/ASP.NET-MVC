@@ -25,7 +25,7 @@ namespace DataAccessLayer
         /// <summary>
         /// 所有的换乘车站，也就是XML数据文件中，IsExChangeSta=YE的Station标记的元素
         /// </summary>
-        public static ArrayList galPathExStations =  null;
+        public static ArrayList galPathExStations = null;
 
         public void InitStations(params string[] flag)
         {
@@ -85,55 +85,55 @@ namespace DataAccessLayer
                     string IsExchangeSta = station.Attribute("IsExchangeSta").Value;
 
                     Node node = this.GetNode(id);
-                  
-                        //始发站没有前一站
-                        if (PrivSta != "0000")
+
+                    //始发站没有前一站
+                    if (PrivSta != "0000")
+                    {
+                        Edge aEdge1 = new Edge();
+
+                        aEdge1.SatrtNodeID = id;
+                        aEdge1.EndNodeID = PrivSta;
+                        aEdge1.Weight = double.Parse(ToPrivTime);
+                        aEdge1.EdgeDirection = DataDirection.priv;
+                        node.EdgeList.Add(aEdge1);
+                    }
+                    //终点站没有下一站
+                    if (NextSta != "9999")
+                    {
+                        Edge aEdge1 = new Edge();
+                        aEdge1.SatrtNodeID = id;
+                        aEdge1.EndNodeID = NextSta;
+                        aEdge1.Weight = double.Parse(ToNextTime);
+                        aEdge1.EdgeDirection = DataDirection.next;
+                        node.EdgeList.Add(aEdge1);
+                    }
+                    //换乘
+                    if (IsExchangeSta == "YE")
+                    {
+                        IEnumerable<XElement> ExStations = station.Elements("ExStation");
+
+                        foreach (XElement exStation in ExStations)
                         {
+                            string[] ToPath = exStation.Attribute("TOPath").Value.Split(',');
+                            string NeedTime = exStation.Attribute("NeedTime").Value;
+
                             Edge aEdge1 = new Edge();
-
                             aEdge1.SatrtNodeID = id;
-                            aEdge1.EndNodeID = PrivSta;
-                            aEdge1.Weight = double.Parse(ToPrivTime);
-                            aEdge1.EdgeDirection = DataDirection.priv;
+                            aEdge1.EndNodeID = ToPath[1];
+                            aEdge1.EdgeDirection = DataDirection.trabsfer;
+                            aEdge1.Weight = double.Parse(NeedTime);
+                            aEdge1.IsStep = true;
                             node.EdgeList.Add(aEdge1);
+
                         }
-                        //终点站没有下一站
-                        if (NextSta != "9999")
-                        {
-                            Edge aEdge1 = new Edge();
-                            aEdge1.SatrtNodeID = id;
-                            aEdge1.EndNodeID = NextSta;
-                            aEdge1.Weight = double.Parse(ToNextTime);
-                            aEdge1.EdgeDirection = DataDirection.next;
-                            node.EdgeList.Add(aEdge1);
-                        }
-                        //换乘
-                        if (IsExchangeSta == "YE")
-                        {
-                            IEnumerable<XElement> ExStations = station.Elements("ExStation");
+                        galPathExStations.Add(node);
 
-                            foreach (XElement exStation in ExStations)
-                            {
-                                string[] ToPath = exStation.Attribute("TOPath").Value.Split(',');
-                                string NeedTime = exStation.Attribute("NeedTime").Value;
-
-                                Edge aEdge1 = new Edge();
-                                aEdge1.SatrtNodeID = id;
-                                aEdge1.EndNodeID = ToPath[1];
-                                aEdge1.EdgeDirection = DataDirection.trabsfer;
-                                aEdge1.Weight = double.Parse(NeedTime);
-                                aEdge1.IsStep = true;
-                                node.EdgeList.Add(aEdge1);
-
-                            }
-                            galPathExStations.Add(node);
-                      
                     }
                 }
             }
         }
 
-        public Node GetNode(string nodeId,params string[] flag)
+        public Node GetNode(string nodeId, params string[] flag)
         {
             if (galPathExStations == null && galPathStations == null) this.InitStations(flag);
             for (int i = 0; i < galPathStations.Count; i++)

@@ -445,7 +445,6 @@
       <ExStation TOPath="05,0523" NeedTime="3"></ExStation>
       <ExStation TOPath="10,1027" NeedTime="3"></ExStation>
     </station>
-
   </path>
 
   <path name="房山线" id="18">
