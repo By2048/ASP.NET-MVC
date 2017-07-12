@@ -147,6 +147,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Views\Nav\Menu.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -180,20 +181,17 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Nav\Menu.cshtml" />
-    <Content Include="Views\Image\Index.cshtml" />
+    <Content Include="Views\Home\_Index.cshtml" />
+    <Content Include="Views\Image\_Index.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Summary.cshtml" />
     <Content Include="Views\User\UserInfo.cshtml" />
     <Content Include="Views\Home\Upload.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
-    <Content Include="Views\Home\APIGetAllFolders.cshtml" />
-    <Content Include="Views\Home\APIGetImagesByFolderId.cshtml" />
     <Content Include="Views\Image\ShowImage.cshtml" />
-    <Content Include="Views\Nav\TestMenu.cshtml" />
-    <Content Include="Views\Home\TestIndex.cshtml" />
-    <Content Include="Views\Image\TestIndex.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Image\Index.cshtml" />
+    <Content Include="Views\Nav\_Menu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

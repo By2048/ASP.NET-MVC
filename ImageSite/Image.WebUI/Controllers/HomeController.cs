@@ -28,7 +28,7 @@ namespace Image.WebUI.Controllers
         public int eachPageFolderItem = 18;
         public int eachPageImageItem = 1;
 
-        public ActionResult Index(int folderPage = 1, int imagePage = 1, int folderId = 0, string keyWord = "")
+        public ActionResult _Index(int folderPage = 1, int imagePage = 1, int folderId = 0, string keyWord = "")
         {
             HttpCookie cookie = HttpContext.Request.Cookies.Get("UserInfo");
 
@@ -43,7 +43,7 @@ namespace Image.WebUI.Controllers
         }
 
 
-        public ActionResult TestIndex(int folderPage = 1, int imagePage = 1, int folderId = 0,string keyWord="")
+        public ActionResult Index(int folderPage = 1, int imagePage = 1, int folderId = 0,string keyWord="")
         {
             return View();
         }

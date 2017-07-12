@@ -1,11 +1,16 @@
-﻿@{
+﻿
+
+@{
     Layout = null;
     ViewBag.Title = "TestMenu";
 }
 
 <h2>TestMenu</h2>
 
-
+@foreach (var item in Image.WebUI.Models.Home.HomeIndexModel.PageFolder.GetPagingData())
+{
+    <p>ID:@item.Id Name:@item.Name</p>
+}
 
 @{
     int curPage = Image.WebUI.Models.Home.HomeIndexModel.PageFolder.PageIndex;
@@ -35,17 +40,10 @@
     }
 }
 
-@foreach (var item in Image.WebUI.Models.Home.HomeIndexModel.PageFolder.GetPagingData())
-{
-    @*<p>ID:@item.Id Name:@item.Name Url:@item.Path</p>*@
-    <a href="@Url.Action("Index", "Home",
-                new { folderPage =curPage, folderId = @item.Id, imagePage =curPage,keyWord=keyWord})">@item.Name</a>
-}
-
 <p>
     @if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder.HasPrev)
     {
-        <a href="@Url.Action("Index", "Home",
+        <a href="@Url.Action("TestIndex", "Home",
                 new { folderPage = prevPage, folderId = folderId, imagePage = imagePage,keyWord=keyWord})">上一页</a>
 
     }
@@ -55,7 +53,7 @@
     }
     @if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder.HasNext)
     {
-        <a href="@Url.Action("Index", "Home",
+        <a href="@Url.Action("TestIndex", "Home",
                 new { folderPage =nextPage, folderId = folderId, imagePage =imagePage,keyWord=keyWord})">下一页</a>
     }
     else

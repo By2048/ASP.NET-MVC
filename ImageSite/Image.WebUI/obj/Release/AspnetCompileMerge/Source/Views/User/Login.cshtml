@@ -1,6 +1,5 @@
 ﻿@model Image.WebUI.Models.UserLoginModel
 
-
 @{
     Layout = null;
 }
@@ -13,40 +12,42 @@
     <title>Login</title>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
-    <script src="~/scripts/jquery-1.10.2.js"></script>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
+            font-family: Comic Sans MS;
         }
 
         .login {
             width: 300px;
-            height: 250px;
+            height: 200px;
             position: absolute;
             top: 40%;
             left: 50%;
             margin: -100px 0 0 -150px;
-            /*border: 1px solid red;*/
+            border: 1px solid red;
         }
 
+        .username {
+            margin-top: 5px;
+        }
         .password, .submite {
             margin-top: 25px;
         }
-
             .username input, .password input {
                 height: 45px;
                 font-size: 20px;
-                text-align: center;
+                text-align:center;
             }
 
-            .submite input {
-                width: 300px;
-                height: 45px;
-                font-size: 25px;
-                font-family: 华文彩云;
-            }
+        .btn-submite {
+            width: 300px;
+            height: 45px;
+            font-size: 20px;
+        }
 
         .validation-summary-errors ul li {
             list-style: none;
@@ -55,7 +56,6 @@
             font-size: 20px;
             margin-top: 25px;
             list-style: none;
-            font-family: 华文彩云;
         }
     </style>
 
@@ -80,7 +80,7 @@
                 @Html.PasswordFor(tmp => tmp.PassWord, new { @id="passWord",@class = "form-control", placeholder = "请输入密码" })
             </div>
             <div class="submite">
-                <input type="submit" value="Login" class="btn btn-default" />
+                <button type="submit" class="btn btn-default btn-submite">Login</button>
             </div>
             @Html.ValidationSummary()
         }

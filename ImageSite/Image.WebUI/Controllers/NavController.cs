@@ -24,7 +24,7 @@ namespace Image.WebUI.Controllers
         public int eachPageFolderItem = 18;
         public int totalCount = 5;
 
-        public PartialViewResult Menu(int folderPage = 1, int imagePage = 1, int folderId = 0, string keyWord = "")
+        public PartialViewResult _Menu(int folderPage = 1, int imagePage = 1, int folderId = 0, string keyWord = "")
         {
             IQueryable<Folders> folders = from folder in foldersReopository.Folders
                                           orderby folder.CreateDate descending
@@ -55,7 +55,7 @@ namespace Image.WebUI.Controllers
         }
 
 
-        public PartialViewResult TestMenu(int folderPage = 1,int imagePage=1,int folderId=0, string keyWord = "")
+        public PartialViewResult Menu(int folderPage = 1,int imagePage=1,int folderId=0, string keyWord = "")
         {
             //keyWord = "ROSI写真情趣系列 蜜桃臀配丁字裤这个角度简直不敢直视";
             IQueryable<Folders> folders = from folder in foldersReopository.Folders

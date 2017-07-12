@@ -44,12 +44,10 @@
 
 }
 <p>
-
-
     @if (Image.WebUI.Models.Home.HomeIndexModel.PageImage.HasPrev)
     {
 
-        <a href="@Url.Action("Index", "Home",
+        <a href="@Url.Action("TestIndex", "Home",
                 new { folderPage = folderPage, folderId =folderId, imagePage = prevPage,keyWord=keyWord})">上一页</a>
 
     }
@@ -59,7 +57,7 @@
     }
     @if (Image.WebUI.Models.Home.HomeIndexModel.PageImage.HasNext)
     {
-        <a href="@Url.Action("Index", "Home",
+        <a href="@Url.Action("TestIndex", "Home",
                 new { folderPage = folderPage, folderId =folderId, imagePage = nextPage,keyWord=keyWord})">下一页</a>
     }
     else

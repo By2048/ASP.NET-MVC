@@ -23,7 +23,7 @@ namespace Image.WebUI.Controllers
 
         public int eachPageImageItem = 1;
 
-        public PartialViewResult Index(int folderPage = 1, int imagePage = 1, int folderId = 0, string keyWord = "")
+        public PartialViewResult _Index(int folderPage = 1, int imagePage = 1, int folderId = 0, string keyWord = "")
         {
             IQueryable<Folders> folders = from folder in foldersReopository.Folders
                                           orderby folder.CreateDate descending
@@ -54,7 +54,7 @@ namespace Image.WebUI.Controllers
             return PartialView(viewModel);
         }
 
-        public PartialViewResult TestIndex(int folderPage = 1, int imagePage = 1, int folderId = 0,string keyWord="")
+        public PartialViewResult Index(int folderPage = 1, int imagePage = 1, int folderId = 0,string keyWord="")
         {
             IQueryable<Folders> folders = from folder in foldersReopository.Folders
                                           orderby folder.CreateDate descending
@@ -79,8 +79,7 @@ namespace Image.WebUI.Controllers
 
             return PartialView();
         }
-
-
+        
 
         public PartialViewResult ShowImage(int folderId, int imagePage=1)
         {
