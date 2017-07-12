@@ -9,10 +9,7 @@
 
 <h2>TestMenu</h2>
 
-@foreach (var item in Image.WebUI.Models.Home.HomeIndexModel.PageImage.GetPagingData())
-{
-    <p>ID:@item.Id Name:@item.Name</p>
-}
+
 
 @{
     int curPage = Image.WebUI.Models.Home.HomeIndexModel.PageImage.PageIndex;
@@ -43,6 +40,13 @@
 
 
 }
+
+@foreach (var item in Image.WebUI.Models.Home.HomeIndexModel.PageImage.GetPagingData())
+{
+    @*<p>ID:@item.Id Name:@item.Name</p>*@
+    <img src="@item.Path" alt="@item.Name" />
+}
+
 <p>
 
 
@@ -50,7 +54,7 @@
     {
 
         <a href="@Url.Action("Index", "Home",
-                new { folderPage = folderPage, folderId =folderId, imagePage = prevPage,keyWord=keyWord})">上一页</a>
+                new { folderPage = folderPage, folderId =folderId, imagePage = prevPage})">上一页</a>
 
     }
     else
@@ -60,7 +64,7 @@
     @if (Image.WebUI.Models.Home.HomeIndexModel.PageImage.HasNext)
     {
         <a href="@Url.Action("Index", "Home",
-                new { folderPage = folderPage, folderId =folderId, imagePage = nextPage,keyWord=keyWord})">下一页</a>
+                new { folderPage = folderPage, folderId =folderId, imagePage = nextPage})">下一页</a>
     }
     else
     {

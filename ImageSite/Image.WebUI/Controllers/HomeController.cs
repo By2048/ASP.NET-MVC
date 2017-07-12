@@ -43,8 +43,9 @@ namespace Image.WebUI.Controllers
         }
 
 
-        public ActionResult Index(int folderPage = 1, int imagePage = 1, int folderId = 0,string keyWord="")
+        public ActionResult Index(int? folderPage = 1, int? imagePage = 1, int? folderId = 0, string keyWord = "")
         {
+
             return View();
         }
 
@@ -77,7 +78,7 @@ namespace Image.WebUI.Controllers
                     }
                 }
                 #endregion
-            }           
+            }
             return View();
         }
 
@@ -101,16 +102,16 @@ namespace Image.WebUI.Controllers
                     Id = folder.Id,
                     Name = folder.Name,
                     Path = folder.Path,
-                    CreateDate=folder.CreateDate,
-                    ImgNum=folder.ImgNum,
-                    TotalSize=folder.TotalSize
+                    CreateDate = folder.CreateDate,
+                    ImgNum = folder.ImgNum,
+                    TotalSize = folder.TotalSize
                 };
                 folderDate.Add(date);
             }
-            return Json(folderDate,JsonRequestBehavior.AllowGet);
+            return Json(folderDate, JsonRequestBehavior.AllowGet);
         }
 
-        public JsonResult APIGetImagesByFolderId(int folderId=0)
+        public JsonResult APIGetImagesByFolderId(int folderId = 0)
         {
             IQueryable<Images> images = from image in imagesReopository.Images
                                         where image.FolderId == folderId
@@ -122,13 +123,13 @@ namespace Image.WebUI.Controllers
                 var date = new Images
                 {
                     Id = image.Id,
-                    FolderName=image.FolderName,
+                    FolderName = image.FolderName,
                     Name = image.Name,
                     Path = image.Path,
                     Type = image.Type,
                     Size = image.Size,
                     Width = image.Width,
-                    Height=image.Height                   
+                    Height = image.Height
                 };
                 imageDate.Add(date);
             }
@@ -136,7 +137,7 @@ namespace Image.WebUI.Controllers
             // Request http://192.168.155.1/Home/APIGetImagesByFolderId/?folderId=2
         }
 
-        public JsonResult APIGetImagesByFolderName(string  folderName="")
+        public JsonResult APIGetImagesByFolderName(string folderName = "")
         {
             IQueryable<Images> images = from image in imagesReopository.Images
                                         where image.FolderName == folderName

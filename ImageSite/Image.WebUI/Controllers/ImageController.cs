@@ -54,28 +54,19 @@ namespace Image.WebUI.Controllers
             return PartialView(viewModel);
         }
 
-        public PartialViewResult Index(int folderPage = 1, int imagePage = 1, int folderId = 0,string keyWord="")
+        public PartialViewResult Index(int imagePage = 1)
         {
-            IQueryable<Folders> folders = from folder in foldersReopository.Folders
-                                          orderby folder.CreateDate descending
-                                          select folder;
+            //IQueryable<Images> images = from image in imagesReopository.Images
+            //                            where image.FolderId == folderId
+            //                            orderby image.Id descending
+            //                            select image;            
 
-            if (keyWord != "")
-                folders = folders.Where(tmp => tmp.Name.Contains(keyWord));
+            //PagingHelper<Images> pageImage= new PagingHelper<Images>(10, images);
 
-            if (folderId == 0)
-                folderId = folders.First().Id;
-
-            IQueryable<Images> images = from image in imagesReopository.Images
-                                        where image.FolderId == folderId
-                                        orderby image.Id descending
-                                        select image;            
-
-            PagingHelper<Images> pageImage= new PagingHelper<Images>(10, images);
-            pageImage.PageIndex = imagePage;
-
-            HomeIndexModel.PageImage = pageImage;
-            HomeIndexModel.KeyWord = keyWord;
+            //pageImage.PageIndex = imagePage;
+            //PagingHelper<Images> pageImage = HomeIndexModel.PageImage;
+            //HomeIndexModel.PageImage = pageImage;
+            HomeIndexModel.PageImage.PageIndex = imagePage;
 
             return PartialView();
         }
