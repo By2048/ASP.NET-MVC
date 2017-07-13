@@ -167,12 +167,9 @@
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Models\FileModel.cs" />
     <Compile Include="Models\Home\HomeIndexModel.cs" />
-    <Compile Include="Models\Image\ShowImageModel.cs" />
     <Compile Include="Models\PagingHelper.cs" />
     <Compile Include="Models\User\UserInfoModel.cs" />
     <Compile Include="Models\User\UserLoginModel.cs" />
-    <Compile Include="Models\Image\ImageIndexModel.cs" />
-    <Compile Include="Models\Nav\NavMenuModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -181,7 +178,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Home\_Index.cshtml" />
     <Content Include="Views\Image\_Index.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Summary.cshtml" />
@@ -202,6 +198,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="HtmlHelpers\" />
+    <Folder Include="Models\Image\" />
+    <Folder Include="Models\Nav\" />
     <Folder Include="Upload\" />
     <Folder Include="Views\Favorite\" />
   </ItemGroup>

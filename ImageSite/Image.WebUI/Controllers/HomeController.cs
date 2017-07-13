@@ -6,7 +6,6 @@ using System.Web.Mvc;
 using Image.EF.Abstract;
 using Image.EF.Concrete;
 using Image.WebUI.Models;
-using PagedList;
 using System.IO;
 using Image.WebUI.Models.Home;
 
@@ -25,28 +24,14 @@ namespace Image.WebUI.Controllers
             this.usersReopository = usersReopository;
         }
 
-        public int eachPageFolderItem = 18;
-        public int eachPageImageItem = 1;
-
-        public ActionResult _Index(int folderPage = 1, int imagePage = 1, int folderId = 0, string keyWord = "")
-        {
-            HttpCookie cookie = HttpContext.Request.Cookies.Get("UserInfo");
-
-            if (cookie != null)
-            {
-                return View();
-            }
-            else
-            {
-                return RedirectToAction("Login", "User");
-            }
-        }
-
 
         public ActionResult Index(int? folderPage = 1, int? imagePage = 1, int? folderId = 0, string keyWord = "")
         {
-
-            return View();
+            HttpCookie cookie = HttpContext.Request.Cookies.Get("UserInfo");
+            if (cookie == null)
+                return RedirectToAction("Login", "User");
+            else
+                return View();
         }
 
 

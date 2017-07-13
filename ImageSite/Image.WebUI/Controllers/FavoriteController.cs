@@ -17,20 +17,8 @@ namespace Image.WebUI.Controllers
         {
             this.foldersReopository = foldersReopository;
             this.favoritesReopository = favoritesReopository;
-        }      
-
-
-        [HttpPost]
-        public JsonResult AddFavorites(int folderId)
-        {
-            HttpCookie cookie = HttpContext.Request.Cookies.Get("UserInfo");
-            int userId = int.Parse(cookie.Values["Id"]);
-            bool status = favoritesReopository.AddFavorites(folderId, userId);
-            if (status == true)
-                return Json(new { status = true });
-            else
-                return Json(new { status = false });
         }
+
 
         [HttpPost]
         public JsonResult IsAddFavorites(int folderId)
@@ -43,6 +31,18 @@ namespace Image.WebUI.Controllers
             else
                 return Json(new { status = false });
         }
+
+        [HttpPost]
+        public JsonResult AddFavorites(int folderId)
+        {
+            HttpCookie cookie = HttpContext.Request.Cookies.Get("UserInfo");
+            int userId = int.Parse(cookie.Values["Id"]);
+            bool status = favoritesReopository.AddFavorites(folderId, userId);
+            if (status == true)
+                return Json(new { status = true });
+            else
+                return Json(new { status = false });
+        }       
 
         [HttpPost]
         public JsonResult DelFavorites(int folderId)

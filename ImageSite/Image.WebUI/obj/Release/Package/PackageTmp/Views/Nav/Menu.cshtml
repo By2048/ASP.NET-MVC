@@ -1,9 +1,44 @@
 ﻿@{
     Layout = null;
-    ViewBag.Title = "TestMenu";
+    ViewBag.Title = "Menu";
 }
 
-<h2>TestMenu</h2>
+
+<style>
+    .content_left {
+        float: left;
+        height: 750px;
+        width: 450px;
+        margin-left: 15px;
+    }
+
+        .content_left a {
+            text-align: center;
+            font-size: 12px;
+        }
+
+    .folder_page_list {
+        width: 450px;
+        height: 50px;
+        text-align: center;
+        position: absolute;
+        bottom: 0px;
+    }
+
+        .folder_page_list .pagination-container {
+            height: 40px;
+        }
+
+            .folder_page_list .pagination-container ul {
+                width: 400px;
+                height: 10px;
+            }
+
+    .active {
+        background-color: #428bca;
+        color: red;
+    }
+</style>
 
 
 
@@ -35,31 +70,30 @@
     }
 }
 
-@foreach (var item in Image.WebUI.Models.Home.HomeIndexModel.PageFolder.GetPagingData())
-{
-    @*<p>ID:@item.Id Name:@item.Name Url:@item.Path</p>*@
-    <a href="@Url.Action("Index", "Home",
-                new { folderPage =curPage, folderId = @item.Id})">@item.Name</a>
-}
+<div class="content_left">
+    @foreach (var item in Image.WebUI.Models.Home.HomeIndexModel.PageFolder.GetPagingData())
+    {
+        @Html.ActionLink(item.Name, "Index", "Home", new { folderPage = curPage, folderId = @item.Id }, new { @class = "list-group-item" })
+    }
 
-<p>
-    @if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder.HasPrev)
-    {
-        <a href="@Url.Action("Index", "Home",
-                new { folderPage = prevPage,folderId=folderId})">上一页</a>
+    <div class="folder_page_list">
+        @if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder.HasPrev)
+        {
+            @Html.ActionLink("上一页", "Index", "Home", new { folderPage = prevPage, folderId = folderId }, new { @class = "" })
+        }
+        else
+        {
+            <span>上一页</span>
+        }
+        @if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder.HasNext)
+        {
+            @Html.ActionLink("下..一页", "Index", "Home", new { folderPage = nextPage, folderId = folderId }, new { @class = "" })
+        }
+        else
+        {
+            <span>下一页</span>
+        }
+    </div>
+</div>
 
-    }
-    else
-    {
-        <em style="color:Gray">上一页</em>
-    }
-    @if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder.HasNext)
-    {
-        <a href="@Url.Action("Index", "Home",
-                new { folderPage =nextPage,folderId=folderId})">下一页</a>
-    }
-    else
-    {
-        <em style="color:Gray">下一页</em>
-    }
-</p>
+

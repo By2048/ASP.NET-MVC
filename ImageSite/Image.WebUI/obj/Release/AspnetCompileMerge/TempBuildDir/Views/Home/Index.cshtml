@@ -4,7 +4,10 @@
 }
 
 @Html.Action("Menu", "Nav")
-@if (Image.WebUI.Models.Home.HomeIndexModel.PageImage!=null)
+
+
+@if (Image.WebUI.Models.Home.HomeIndexModel.PageImage != null)
 {
     @Html.Action("Index", "Image")
+
 }

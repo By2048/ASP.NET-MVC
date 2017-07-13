@@ -9,6 +9,7 @@ namespace Image.WebUI.Models
     {
         //分页数据源
         public IEnumerable<T> DataSource { get; private set; }
+
         //每页显示记录的数量
         public int PageSize { get; private set; }
         //当前页数
