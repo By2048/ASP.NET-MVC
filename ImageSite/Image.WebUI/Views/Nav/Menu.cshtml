@@ -59,13 +59,23 @@
     bool hasPrev = HomeIndexModel.PageFolder.HasPrev;
 
     startNum = (pageIndex / 8) * 8;
+
+    string keyWord = HomeIndexModel.KeyWord;
+
 }
 
 <div class="content_left">
 
     @foreach (var item in HomeIndexModel.PageFolder.GetPagingData())
     {
-        @Html.ActionLink(item.Name, "Index", "Home", new { folderPage = pageIndex, folderId = @item.Id }, new { @class = "list-group-item" })
+        if (item.Id == folderId)
+        {
+            @Html.ActionLink(item.Name, "Index", "Home", new { folderPage = pageIndex, folderId = @item.Id, keyWord = keyWord }, new { @class = "list-group-item active" })
+        }
+        else
+        {
+            @Html.ActionLink(item.Name, "Index", "Home", new { folderPage = pageIndex, folderId = @item.Id, keyWord = keyWord }, new { @class = "list-group-item" })
+        }
     }
 
     <div class="folder_page_list">
@@ -73,7 +83,7 @@
             @if (hasPrev && pageIndex - 8 >= 0)
             {
                 <li class="previous">
-                    @Html.ActionLink("上一页", "Index", "Home", new { folderPage = prevPage, folderId = folderId }, new { @class = "" })
+                    @Html.ActionLink("上一页", "Index", "Home", new { folderPage = prevPage, folderId = folderId, keyWord = keyWord }, new { @class = "" })
                 </li>
             }
             else
@@ -88,13 +98,13 @@
                 if (i == pageIndex)
                 {
                     <li class="active">
-                        <a href="@Url.Action("Index", "Home", new { folderPage = i, folderId = folderId})">@i</a>
+                        <a href="@Url.Action("Index", "Home", new { folderPage = i, folderId = folderId ,keyWord=keyWord})">@i</a>
                     </li>
                 }
                 else
                 {
                     <li>
-                        <a href="@Url.Action("Index", "Home",new { folderPage = i, folderId = folderId })">@i</a>
+                        <a href="@Url.Action("Index", "Home",new { folderPage = i, folderId = folderId ,keyWord=keyWord})">@i</a>
                     </li>
                 }
             }
@@ -102,7 +112,7 @@
             @if (hasNext && pageIndex + 8 < pageCount)
             {
                 <li class="next">
-                    @Html.ActionLink("下一页", "Index", "Home", new { folderPage = nextPage, folderId = folderId }, new { @class = "" })
+                    @Html.ActionLink("下一页", "Index", "Home", new { folderPage = nextPage, folderId = folderId, keyWord = keyWord }, new { @class = "" })
                 </li>
             }
             else

@@ -38,7 +38,7 @@ namespace Image.WebUI.Controllers
             if (keyWord != "")
                 folders = folders.Where(tmp => tmp.Name.Contains(keyWord));
 
-            PagingHelper<Folders> pageFolder = new PagingHelper<Folders>(10, folders);
+            PagingHelper<Folders> pageFolder = new PagingHelper<Folders>(18, folders);
             HomeIndexModel.PageFolder = pageFolder;
 
 
@@ -56,6 +56,8 @@ namespace Image.WebUI.Controllers
             }
 
             pageFolder.PageIndex = folderPage;
+
+            HomeIndexModel.KeyWord = keyWord;
 
             return PartialView();
         }
