@@ -23,41 +23,33 @@ namespace Image.WebUI.Controllers
             this.favoritesReopository = favoritesReopository;
         }
 
-        public int eachPageFolderItem = 18;
-        public int totalCount = 5;
-
-    
-        public PartialViewResult Menu(int folderPage = 1,int ?folderId=0,string keyWord="")
+        public PartialViewResult Menu(int folderPage = 1, int? folderId = 0, string keyWord = "")
         {
-            
-
             IQueryable<Folders> folders = from folder in foldersReopository.Folders
                                           orderby folder.CreateDate descending
                                           select folder;
 
             if (keyWord != "")
                 folders = folders.Where(tmp => tmp.Name.Contains(keyWord));
+            HomeIndexModel.KeyWord = keyWord;
+
 
             PagingHelper<Folders> pageFolder = new PagingHelper<Folders>(18, folders);
+            pageFolder.PageIndex = folderPage;
             HomeIndexModel.PageFolder = pageFolder;
 
 
             if (folderId == 0)
-                HomeIndexModel.FolderId = folders.First().Id;
-            else
-            {
-                HomeIndexModel.FolderId = (int)folderId;
-                IQueryable<Images> images = from image in imagesReopository.Images
-                                            where image.FolderId == folderId
-                                            orderby image.Id descending
-                                            select image;
-                PagingHelper<Images> pageImage = new PagingHelper<Images>(1, images);
-                HomeIndexModel.PageImage = pageImage;
-            }
-
-            pageFolder.PageIndex = folderPage;
-
-            HomeIndexModel.KeyWord = keyWord;
+                folderId = folders.First().Id;   
+            HomeIndexModel.FolderId = (int)folderId;
+            
+            IQueryable<Images> images = from image in imagesReopository.Images
+                                        where image.FolderId == folderId
+                                        orderby image.Id descending
+                                        select image;
+            PagingHelper<Images> pageImage = new PagingHelper<Images>(1, images);
+            HomeIndexModel.PageImage = pageImage;
+            
 
             return PartialView();
         }

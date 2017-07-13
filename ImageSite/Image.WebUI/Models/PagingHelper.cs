@@ -28,6 +28,7 @@ namespace Image.WebUI.Models
             this.DataSource = dataSource;
             PageCount = (int)Math.Ceiling(dataSource.Count() / (double)pageSize);
         }
+
         //获取当前页数据
         public IEnumerable<T> GetPagingData()
         {

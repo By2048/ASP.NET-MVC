@@ -1,7 +1,7 @@
-﻿
+﻿@using Image.WebUI.Models.Home
+
 @{
     ViewBag.Title = "TestIndex";
-    Layout = null;
 }
 
 <script type="text/javascript">
@@ -112,59 +112,86 @@
 
 
 @{
-    int curPage = Image.WebUI.Models.Home.HomeIndexModel.PageImage.PageIndex;
-    int nextPage = curPage + 1;
-    int prevPage = curPage - 1;
-
-    int folderId = Image.WebUI.Models.Home.HomeIndexModel.FolderId;
-    int folderPage;
-
-    if (Image.WebUI.Models.Home.HomeIndexModel.PageFolder != null)
+    int folderId, folderPage, pageIndex, pageCount, prevPage, nextPage, startNum = 1;
+    folderId = HomeIndexModel.FolderId;
+    if (HomeIndexModel.PageFolder != null)
     {
-        folderPage = Image.WebUI.Models.Home.HomeIndexModel.PageFolder.PageIndex;
+        folderPage = HomeIndexModel.PageFolder.PageIndex;
     }
     else
     {
         folderPage = 1;
     }
+    pageIndex = HomeIndexModel.PageImage.PageIndex;
+    prevPage = pageIndex - 8;
+    nextPage = pageIndex + 8;
+    pageCount = HomeIndexModel.PageImage.PageCount;
 
-    string keyWord;
-    if (Image.WebUI.Models.Home.HomeIndexModel.KeyWord != "")
-    {
-        keyWord = Image.WebUI.Models.Home.HomeIndexModel.KeyWord;
-    }
-    else
-    {
-        keyWord = "";
-    }
+    bool hasNext = HomeIndexModel.PageImage.HasNext;
+    bool hasPrev = HomeIndexModel.PageImage.HasPrev;
+
+    startNum = (pageIndex / 8) * 8;
+
 }
 
 <div class="content_right">
     <div class="show_image">
-        @foreach (var item in Image.WebUI.Models.Home.HomeIndexModel.PageImage.GetPagingData())
+        @foreach (var item in HomeIndexModel.PageImage.GetPagingData())
         {
             <span>
-                <img src="@item.Path" alt="@item.Name" class="img-thumbnail" onload="javascript: DrawImage(this,900,700)"/>
+                <img src="@item.Path" alt="@item.Name" class="img-thumbnail" onload="javascript: DrawImage(this,900,700)" />
             </span>
         }
     </div>
+
     <div class="image_page_list">
-        @if (Image.WebUI.Models.Home.HomeIndexModel.PageImage.HasPrev)
-        {
-            <a href="@Url.Action("Index", "Home",new { folderPage = folderPage, folderId =folderId, imagePage = prevPage})">上一页</a>
-        }
-        else
-        {
-            <span>上一页</span>
-        }
-        @if (Image.WebUI.Models.Home.HomeIndexModel.PageImage.HasNext)
-        {
-            <a href="@Url.Action("Index", "Home",new { folderPage = folderPage, folderId =folderId, imagePage = nextPage})">下一页</a>
-        }
-        else
-        {
-            <span>下一页</span>
-        }
+        <ul class="pagination">
+            @if (hasPrev && pageIndex - 8 > 0)
+            {
+                <li class="previous">
+                    <a href="@Url.Action("Index", "Home",new { folderPage = folderPage, folderId =folderId, imagePage = prevPage})">上一页</a>
+                </li>
+            }
+            else
+            {
+                <li class="previous disabled">
+                    <span>上一页</span>
+                </li>
+            }
+
+            @for (int i = startNum+1, j = 0; i < pageCount && j < 8; i++, j++)
+            {
+                if (i == pageIndex)
+                {
+                    <li class="active">
+                        <a href="@Url.Action("Index", "Home", new { folderPage = folderPage, folderId = folderId, imagePage = i })">@i</a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <a href="@Url.Action("Index", "Home",new { folderPage = folderPage, folderId = folderId, imagePage = i })">@i</a>
+                    </li>
+                }
+            }
+
+            @if (hasNext && pageIndex + 8 < pageCount)
+            { 
+                <li class="next">
+                    <a href="@Url.Action("Index", "Home",new { folderPage = folderPage, folderId =folderId, imagePage = nextPage})">下一页</a>
+                </li>
+            }
+            else
+            {
+                <li class="next disabled">
+                    <span>下一页</span>
+                </li>
+            }
+        </ul>
+
+
+
+
     </div>
 </div>
 
