@@ -30,8 +30,13 @@ namespace Image.WebUI.Controllers
         
 
         public PartialViewResult ShowImage(int folderId=0)
-        {            
-            return PartialView();
+        {
+
+            IQueryable<Images> images = from image in imagesReopository.Images
+                                        where image.FolderId == folderId
+                                        orderby image.Id descending
+                                        select image;
+            return PartialView(images);
         }
 
 

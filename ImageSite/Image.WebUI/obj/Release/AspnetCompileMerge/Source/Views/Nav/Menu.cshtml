@@ -45,23 +45,50 @@
 
 
 @{
-    int pageIndex, nextPage, prevPage, folderId, pageCount, startNum;
-
-    pageIndex = Image.WebUI.Models.Home.HomeIndexModel.PageFolder.PageIndex;
-    prevPage = pageIndex - 8;
-    nextPage = pageIndex + 8;
-
-    folderId = Image.WebUI.Models.Home.HomeIndexModel.FolderId;
+    int pageIndex, nextPage = 0, prevPage, folderId, pageCount, startNum;
+    string keyWord;
 
     pageCount = HomeIndexModel.PageFolder.PageCount;
+    pageIndex = HomeIndexModel.PageFolder.PageIndex;
+    folderId = HomeIndexModel.FolderId;
+    keyWord = HomeIndexModel.KeyWord;
 
-    bool hasNext = HomeIndexModel.PageFolder.HasNext;
-    bool hasPrev = HomeIndexModel.PageFolder.HasPrev;
 
-    startNum = (pageIndex / 8) * 8;
+    if (pageIndex % 8 == 0)
+    {
+        startNum = (pageIndex / 8-1) * 8 +1;
+    }
+    else
+    {
+        startNum = (pageIndex / 8) * 8 + 1;
+    }
 
-    string keyWord = HomeIndexModel.KeyWord;
+    bool hasNext = pageCount - (startNum + 8) > 0 ? true : false;
+    bool hasPrev = startNum == 0 ? false : true;
 
+    if (hasPrev)
+    {
+        prevPage = startNum - 8;
+    }
+    else
+    {
+        prevPage = 1;
+    }
+    if (hasNext)
+    {
+        if (pageCount - startNum  >= 8)
+        {
+            nextPage = startNum + 8;
+        }
+        else
+        {
+            nextPage = startNum;
+        }
+    }
+    else
+    {
+        nextPage = pageCount;
+    }
 }
 
 <div class="content_left">
@@ -80,7 +107,7 @@
 
     <div class="folder_page_list">
         <ul class="pagination">
-            @if (hasPrev && pageIndex - 8 >= 0)
+            @if (hasPrev)
             {
                 <li class="previous">
                     @Html.ActionLink("上一页", "Index", "Home", new { folderPage = prevPage, folderId = folderId, keyWord = keyWord }, new { @class = "" })
@@ -93,7 +120,7 @@
                 </li>
             }
 
-            @for (int i = startNum+1, j = 0; i < pageCount && j < 8; i++, j++)
+            @for (int i = startNum, j = 0; i < pageCount && j < 8; i++, j++)
             {
                 if (i == pageIndex)
                 {
@@ -109,7 +136,7 @@
                 }
             }
 
-            @if (hasNext && pageIndex + 8 < pageCount)
+            @if (hasNext)
             {
                 <li class="next">
                     @Html.ActionLink("下一页", "Index", "Home", new { folderPage = nextPage, folderId = folderId, keyWord = keyWord }, new { @class = "" })

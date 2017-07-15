@@ -112,25 +112,55 @@
 
 
 @{
-    int folderId, folderPage, pageIndex, pageCount, prevPage, nextPage, startNum = 1;
+    int folderId, folderPage, pageIndex, pageCount, prevPage, nextPage,startNum = 1;
+
     folderId = HomeIndexModel.FolderId;
-    if (HomeIndexModel.PageFolder != null)
+    pageIndex = HomeIndexModel.PageImage.PageIndex;
+    pageCount = HomeIndexModel.PageImage.PageCount;
+    folderPage = HomeIndexModel.PageFolder.PageIndex;
+    string keyWord = HomeIndexModel.KeyWord;
+
+
+    prevPage = pageIndex - 8;
+    nextPage = pageIndex + 8;
+
+
+
+    if (pageIndex % 8 == 0)
     {
-        folderPage = HomeIndexModel.PageFolder.PageIndex;
+        startNum = (pageIndex / 8 - 1) * 8 + 1;
     }
     else
     {
-        folderPage = 1;
+        startNum = (pageIndex / 8) * 8 + 1;
     }
-    pageIndex = HomeIndexModel.PageImage.PageIndex;
-    prevPage = pageIndex - 8;
-    nextPage = pageIndex + 8;
-    pageCount = HomeIndexModel.PageImage.PageCount;
 
-    bool hasNext = HomeIndexModel.PageImage.HasNext;
-    bool hasPrev = HomeIndexModel.PageImage.HasPrev;
+    bool hasNext = pageCount - (startNum + 8) > 0 ? true : false;
+    bool hasPrev = startNum == 0 ? false : true;
 
-    startNum = (pageIndex / 8) * 8;
+    if (hasPrev)
+    {
+        prevPage = startNum - 8;
+    }
+    else
+    {
+        prevPage = 1;
+    }
+    if (hasNext)
+    {
+        if (pageCount - startNum >= 8)
+        {
+            nextPage = startNum + 8;
+        }
+        else
+        {
+            nextPage = startNum;
+        }
+    }
+    else
+    {
+        nextPage = pageCount;
+    }
 
 }
 
@@ -146,10 +176,10 @@
 
     <div class="image_page_list">
         <ul class="pagination">
-            @if (hasPrev && pageIndex - 8 > 0)
+            @if (hasPrev)
             {
                 <li class="previous">
-                    <a href="@Url.Action("Index", "Home",new { folderPage = folderPage, folderId =folderId, imagePage = prevPage})">上一页</a>
+                    <a href="@Url.Action("Index", "Home",new { folderPage = folderPage, folderId =folderId, imagePage = prevPage, keyWord = keyWord})">上一页</a>
                 </li>
             }
             else
@@ -159,23 +189,23 @@
                 </li>
             }
 
-            @for (int i = startNum+1, j = 0; i < pageCount && j < 8; i++, j++)
+            @for (int i = startNum, j = 0; i < pageCount && j < 8; i++, j++)
             {
                 if (i == pageIndex)
                 {
                     <li class="active">
-                        <a href="@Url.Action("Index", "Home", new { folderPage = folderPage, folderId = folderId, imagePage = i })">@i</a>
+                        <a href="@Url.Action("Index", "Home", new { folderPage = folderPage, folderId = folderId, imagePage = i, keyWord = keyWord })">@i</a>
                     </li>
                 }
                 else
                 {
                     <li>
-                        <a href="@Url.Action("Index", "Home",new { folderPage = folderPage, folderId = folderId, imagePage = i })">@i</a>
+                        <a href="@Url.Action("Index", "Home",new { folderPage = folderPage, folderId = folderId, imagePage = i , keyWord = keyWord})">@i</a>
                     </li>
                 }
             }
 
-            @if (hasNext && pageIndex + 8 < pageCount)
+            @if (hasNext)
             { 
                 <li class="next">
                     <a href="@Url.Action("Index", "Home",new { folderPage = folderPage, folderId =folderId, imagePage = nextPage})">下一页</a>
