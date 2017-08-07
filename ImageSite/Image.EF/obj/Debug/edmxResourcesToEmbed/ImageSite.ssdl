@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ImageSiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ActualName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="Information" Type="nvarchar" MaxLength="300" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Favorites">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FolderId" Type="int" Nullable="false" />
+    <Property Name="FolderName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CollectionDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Folders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Path" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="ImgNum" Type="int" Nullable="false" />
+    <Property Name="TotalSize" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Images">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FolderId" Type="int" Nullable="false" />
+    <Property Name="FolderName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Path" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Size" Type="int" Nullable="false" />
+    <Property Name="Width" Type="int" Nullable="false" />
+    <Property Name="Height" Type="int" Nullable="false" />
+    <Property Name="VisitDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="ChangeDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ActualName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Sex" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="Age" Type="smallint" Nullable="false" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UserType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Balance" Type="decimal" Precision="9" Scale="2" Nullable="false" />
+    <Property Name="BrowseNum" Type="int" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="Information" Type="nvarchar" MaxLength="300" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ImageSiteModelStoreContainer">
+    <EntitySet Name="Admins" EntityType="Self.Admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Favorites" EntityType="Self.Favorites" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Folders" EntityType="Self.Folders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Images" EntityType="Self.Images" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

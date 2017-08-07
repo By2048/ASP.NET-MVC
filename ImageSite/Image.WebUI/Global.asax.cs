@@ -1,4 +1,5 @@
-﻿using Image.EF.Concrete;
+﻿using Image.EF;
+using Image.EF.Concrete;
 using Image.WebUI.Infrastructure.Binders;
 using System;
 using System.Collections.Generic;

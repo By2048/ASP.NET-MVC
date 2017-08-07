@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using Image.WebUI.Models;
 using System.Web.Security;
 using Image.EF.Concrete;
+using Image.EF;
 
 namespace Image.WebUI.Controllers
 {

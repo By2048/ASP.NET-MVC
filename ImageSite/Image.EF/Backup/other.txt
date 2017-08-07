@@ -1,0 +1,6 @@
+﻿
+Link-ImageSite
+P@ssw0rd
+
+<add name="ImageSiteEntities" connectionString="data source=.;initial catalog=ImageSite;uid=Link-ImageSite;password=P@ssw0rd" providerName="System.Data.SqlClient" />
+

@@ -1,4 +1,5 @@
-﻿using Image.EF.Concrete;
+﻿using Image.EF;
+using Image.EF.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;

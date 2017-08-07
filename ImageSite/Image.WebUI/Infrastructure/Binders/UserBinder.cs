@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Image.EF.Concrete;
+using Image.EF;
 
 namespace Image.WebUI.Infrastructure.Binders
 {

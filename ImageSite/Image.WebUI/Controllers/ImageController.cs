@@ -7,6 +7,7 @@ using Image.EF.Abstract;
 using Image.EF.Concrete;
 using Image.WebUI.Models;
 using Image.WebUI.Models.Home;
+using Image.EF;
 
 namespace Image.WebUI.Controllers
 {

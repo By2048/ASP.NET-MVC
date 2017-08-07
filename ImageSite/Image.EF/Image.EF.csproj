@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.6\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.6\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -41,6 +45,12 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.6\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -54,61 +64,67 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAdminsReopository.cs" />
     <Compile Include="Abstract\IFavoritesReopository.cs" />
     <Compile Include="Abstract\IUsersReopository.cs" />
     <Compile Include="Abstract\IFoldersReopository.cs" />
     <Compile Include="Abstract\IImagesReopository.cs" />
+    <Compile Include="Admins.cs">
+      <DependentUpon>ImageSite.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\EFAdminsReopository.cs" />
     <Compile Include="Concrete\EFFavoritesReopository.cs" />
     <Compile Include="Concrete\EFUsersReopository.cs" />
     <Compile Include="Concrete\EFFoldersReopository.cs" />
     <Compile Include="Concrete\EFImagesReopository.cs" />
-    <Compile Include="Concrete\Favorites.cs">
+    <Compile Include="Favorites.cs">
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
-    <Compile Include="Concrete\Folders.cs">
+    <Compile Include="Folders.cs">
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
-    <Compile Include="Concrete\Images.cs">
+    <Compile Include="Images.cs">
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
-    <Compile Include="Concrete\ImageSite.Context.cs">
+    <Compile Include="ImageSite.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ImageSite.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Concrete\ImageSite.cs">
+    <Compile Include="ImageSite.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
-    <Compile Include="Concrete\ImageSite.Designer.cs">
+    <Compile Include="ImageSite.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ImageSite.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Concrete\Users.cs">
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users.cs">
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Backup\other.txt" />
     <Content Include="Backup\sql.txt" />
-    <Content Include="Concrete\ImageSite.Context.tt">
+    <Content Include="ImageSite.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ImageSite.edmx</DependentUpon>
       <LastGenOutput>ImageSite.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Concrete\ImageSite.tt">
+    <Content Include="ImageSite.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ImageSite.edmx</DependentUpon>
       <LastGenOutput>ImageSite.cs</LastGenOutput>
     </Content>
     <None Include="App.Config" />
-    <EntityDeploy Include="Concrete\ImageSite.edmx">
+    <EntityDeploy Include="ImageSite.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ImageSite.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Concrete\ImageSite.edmx.diagram">
+    <None Include="ImageSite.edmx.diagram">
       <DependentUpon>ImageSite.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -127,6 +143,13 @@
   <PropertyGroup>
     <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
   </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.6\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.6\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

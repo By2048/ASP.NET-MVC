@@ -1,9 +1,4 @@
 ﻿
-Link-ImageSite
-P@ssw0rd
-
-<add name="ImageSiteEntities" connectionString="data source=.;initial catalog=ImageSite;uid=Link-ImageSite;password=P@ssw0rd" providerName="System.Data.SqlClient" />
-
 
 create database ImageSite
 go
@@ -43,6 +38,9 @@ create table [Users]
 (
 	[Id] 			int identity(1,1),
 	[UserName]		nvarchar(100) not null,
+	[ActualName]	nvarchar(100) not null,
+	[Sex]			char(2) not null,
+	[Age]			smallint not null,
 	[PassWord]		nvarchar(100) not null,
 	[Email]			nvarchar(100) not null,
 	[UserType]		nvarchar(50) not null,
@@ -65,28 +63,39 @@ create table [Favorites]
 )
 
 
+create table [Admins]
+(
+	[Id]			int identity(1,1),
+	[UserName]		nvarchar(100) not null,
+	[ActualName]	nvarchar(100) not null,
+	[PassWord]		nvarchar(100) not null,	
+	[Email]			nvarchar(100) not null,
+	[CreateDate]	datetime not null,
+	[Information]	nvarchar(300) not null,
+	primary key (Id),
+)
 
 
 select * from Folders
-select * from Images
-select * from Users
-select * from Favorites
 select * from Images order by CreateDate desc
+select * from Favorites
+select * from Users
+select * from Admins
 
 delete from Folders
 delete from Images
-delete from Users
 delete from Favorites
+delete from Users
+delete from Admins
+
 
 drop table Folders
 drop table Images
-drop table Users
 drop table Favorites
+drop table Users
+drop table Admins
 
-insert into Folders values('name-1','path-1','2015-12-5','12','5.3')
-insert into Folders values('name-2','path-1','2015-12-5','12','5.3')
-insert into Folders values('name-3','path-1','2015-12-5','12','5.3')
-insert into Folders values('name-4','path-1','2015-12-5','12','5.3')
 
-insert into Users values('A001','123','123@123.123','user','100','0','2015-11-5 21:21:25 ','Test-Info')
+insert into Users values('A001','user-1','男','20','123','123@123.123','vip-1','100','0','2015-11-5 21:21:25 ','user-Info')
 
+insert into Admins values('Admin','admin-1','123','123@123.123','2017-8-7 21:17:25 ','admin-Info')
