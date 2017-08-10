@@ -25,4 +25,3 @@ E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\obj\Debug\Image.EF.dll
 E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\obj\Debug\Image.EF.pdb
 E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\obj\Debug\Image.EF.csprojResolveAssemblyReference.cache

@@ -7,24 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Image.EF
+namespace Image.EF.Concrete
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     using System.Data.Entity.ModelConfiguration.Conventions;
 
+
     public partial class ImageSiteEntities : DbContext
     {
-        public ImageSiteEntities() : base("name=ImageSiteEntities")
+        public ImageSiteEntities()
+            : base("name=ImageSiteEntities")
         {
         }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
-
+    
         public virtual DbSet<Admins> Admins { get; set; }
         public virtual DbSet<Favorites> Favorites { get; set; }
         public virtual DbSet<Folders> Folders { get; set; }

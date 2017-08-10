@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Image.EF.Folders>
+﻿@model IEnumerable<Image.EF.Concrete.Folders>
 
 @{
     Layout = null;
@@ -49,14 +49,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.ImgNum)
             </td>
+
             <td>
                 @Html.DisplayFor(modelItem => item.TotalSize)
             </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-            </td>
+           
         </tr>
     }
     

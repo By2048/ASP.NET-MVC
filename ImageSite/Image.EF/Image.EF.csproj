@@ -69,7 +69,7 @@
     <Compile Include="Abstract\IUsersReopository.cs" />
     <Compile Include="Abstract\IFoldersReopository.cs" />
     <Compile Include="Abstract\IImagesReopository.cs" />
-    <Compile Include="Admins.cs">
+    <Compile Include="Concrete\Admins.cs">
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
     <Compile Include="Concrete\EFAdminsReopository.cs" />
@@ -77,54 +77,54 @@
     <Compile Include="Concrete\EFUsersReopository.cs" />
     <Compile Include="Concrete\EFFoldersReopository.cs" />
     <Compile Include="Concrete\EFImagesReopository.cs" />
-    <Compile Include="Favorites.cs">
+    <Compile Include="Concrete\Favorites.cs">
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
-    <Compile Include="Folders.cs">
+    <Compile Include="Concrete\Folders.cs">
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
-    <Compile Include="Images.cs">
+    <Compile Include="Concrete\Images.cs">
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
-    <Compile Include="ImageSite.Context.cs">
+    <Compile Include="Concrete\ImageSite.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ImageSite.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ImageSite.cs">
+    <Compile Include="Concrete\ImageSite.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
-    <Compile Include="ImageSite.Designer.cs">
+    <Compile Include="Concrete\ImageSite.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ImageSite.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Users.cs">
+    <Compile Include="Concrete\Users.cs">
       <DependentUpon>ImageSite.tt</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Backup\other.txt" />
     <Content Include="Backup\sql.txt" />
-    <Content Include="ImageSite.Context.tt">
+    <Content Include="Concrete\ImageSite.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ImageSite.edmx</DependentUpon>
       <LastGenOutput>ImageSite.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ImageSite.tt">
+    <Content Include="Concrete\ImageSite.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ImageSite.edmx</DependentUpon>
       <LastGenOutput>ImageSite.cs</LastGenOutput>
     </Content>
     <None Include="App.Config" />
-    <EntityDeploy Include="ImageSite.edmx">
+    <EntityDeploy Include="Concrete\ImageSite.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ImageSite.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ImageSite.edmx.diagram">
+    <None Include="Concrete\ImageSite.edmx.diagram">
       <DependentUpon>ImageSite.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />

@@ -7,24 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Image.EF
+namespace Image.EF.Concrete
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Images
+    public partial class Favorites
     {
         public int Id { get; set; }
+        public int UserId { get; set; }
+        public string UserName { get; set; }
         public int FolderId { get; set; }
         public string FolderName { get; set; }
-        public string Name { get; set; }
-        public string Path { get; set; }
-        public string Type { get; set; }
-        public int Size { get; set; }
-        public int Width { get; set; }
-        public int Height { get; set; }
-        public System.DateTime VisitDate { get; set; }
-        public System.DateTime CreateDate { get; set; }
-        public System.DateTime ChangeDate { get; set; }
+        public System.DateTime CollectionDate { get; set; }
     }
 }

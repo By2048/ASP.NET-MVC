@@ -42,3 +42,14 @@ E:\Desktop\SSLS V8.0\SSLS\SSLS.Domain\bin\Debug\zh-Hans\EntityFramework.resource
 E:\Desktop\SSLS V8.0\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.csprojResolveAssemblyReference.cache
 E:\Desktop\SSLS V8.0\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.dll
 E:\Desktop\SSLS V8.0\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.pdb
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.dll.config
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.dll
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\bin\Debug\SSLS.Domain.pdb
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\bin\Debug\EntityFramework.dll
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\bin\Debug\EntityFramework.xml
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.csprojResolveAssemblyReference.cache
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.dll
+E:\Desktop\ASP.NET-MVC\SSLS\SSLS.Domain\obj\Debug\SSLS.Domain.pdb

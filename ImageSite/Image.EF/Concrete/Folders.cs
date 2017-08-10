@@ -7,24 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Image.EF
+namespace Image.EF.Concrete
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Users
+    public partial class Folders
     {
         public int Id { get; set; }
-        public string UserName { get; set; }
-        public string ActualName { get; set; }
-        public string Sex { get; set; }
-        public short Age { get; set; }
-        public string PassWord { get; set; }
-        public string Email { get; set; }
-        public string UserType { get; set; }
-        public decimal Balance { get; set; }
-        public int BrowseNum { get; set; }
+        public string Name { get; set; }
+        public string Path { get; set; }
         public System.DateTime CreateDate { get; set; }
-        public string Information { get; set; }
+        public int ImgNum { get; set; }
+        public double TotalSize { get; set; }
     }
 }

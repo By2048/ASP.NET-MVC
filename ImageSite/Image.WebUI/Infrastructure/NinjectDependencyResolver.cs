@@ -24,7 +24,7 @@ namespace Image.WebUI.Infrastructure
             kernel.Bind<IImagesReopository>().To<EFImagesReopository>();
             kernel.Bind<IFoldersReopository>().To<EFFoldersReopository>();
             kernel.Bind<IUsersReopository>().To<EFUsersReopository>();
-            kernel.Bind<IFavoritesReopository>().To<EFFavoritesReopositoryL>();
+            kernel.Bind<IFavoritesReopository>().To<EFFavoritesReopository>();
             kernel.Bind<IAdminsReopository>().To<EFAdminsReopository>();
         }
         public object GetService(Type serviceType)

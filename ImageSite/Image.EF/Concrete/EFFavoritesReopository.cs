@@ -7,7 +7,7 @@ using Image.EF.Abstract;
 
 namespace Image.EF.Concrete
 {
-    public class EFFavoritesReopositoryL:IFavoritesReopository
+    public class EFFavoritesReopository:IFavoritesReopository
     {
         private ImageSiteEntities db = new ImageSiteEntities();
         public IQueryable<Favorites> Favorites

@@ -7,18 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Image.EF
+namespace Image.EF.Concrete
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Folders
+    public partial class Admins
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Path { get; set; }
+        public string UserName { get; set; }
+        public string ActualName { get; set; }
+        public string PassWord { get; set; }
+        public string Email { get; set; }
         public System.DateTime CreateDate { get; set; }
-        public int ImgNum { get; set; }
-        public double TotalSize { get; set; }
+        public string Information { get; set; }
     }
 }
