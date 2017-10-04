@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Registration</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary JavaScript plugins) -->
+    <script type='text/javascript' src="js/jquery-1.11.1.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- start menu -->
+    <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="js/megamenu.js"></script>
+    <script>        $(document).ready(function () { $(".megamenu").megamenu(); });</script>
+    <script src="js/menu_jquery.js"></script>
+    <script src="js/hide_foot.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .registration {
+            position: relative;
+            width: 1000px;
+            height: 600px;
+            margin: 50px auto;
+            /*border: 1px solid #666;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #register-submit {
+            width:96px;
+            height:42px;
+            background-color:#3b5998;
+            color:white;
+        }
+
+    </style>
+</head>
+<script type="text/javascript">
+    $(function () {
+        $("#register-submit").click(function () {
+            var userid = $("#lg_username").val();
+
+            if (userid == "")
+                alert("请输入用户账号！");
+            else {
+                var userpwd = $("#lg_password").val();
+                if (userpwd == "")
+                    alert("请输入密码！");
+                else {
+                    $.post(
+                            "handlers/CheckLoginHandler.ashx",
+                            {
+                                id: userid,
+                                password: userpwd
+                            },
+                           function (data) {
+                               if (data == "ok") {
+                                   var url = getUrlParam("returnUrl");
+                                   if (url == null)
+                                       window.location.href = "index.aspx";
+                                   else window.location.href = url;
+                               }
+                               else if (data == "UserIdError")
+                                   alert("用户账户不存在！");
+                               else
+                                   alert("用户密码错误！");
+                           }
+                        );
+                }
+            }
+        });
+    })
+
+
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
+
+</script>
+<body>
+    <!-- header_top -->
+    <div class="top_bg">
+        <div class="container">
+            <div class="header_top">
+                <div class="top_right">
+                    <ul>
+                        <li></li>
+
+                        <li><a href="index.aspx">主页 1</a></li>
+                        |
+                        <li><a href="indexNew.aspx">主页 2</a></li>
+                        |
+                        <li><a href="about.html">about</a></li>
+                        |
+                        <li><a href="buy.aspx">购物车</a></li>
+
+                        |
+                        <li><a href="userCenter.aspx">用户中心</a></li>
+                        |
+                        <li><a href="placeOrder.aspx">支付界面</a></li>
+                        |
+                        <li><a href="login.html">登录</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="header_bg">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.aspx">
+                        <img src="images/logo.png" alt="" />
+                    </a>
+                </div>
+                <!-- start header_right -->
+                <div class="header_right">
+                    <div class="create_btn">
+                        <a class="arrow" href="registration.aspx">
+                            create account
+                            <img src="images/right_arrow.png" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="search">
+                        <form>
+                            <input type="text" value="" placeholder="search...">
+                            <input type="submit" value="">
+                        </form>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+                <!-- start header menu -->
+
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="container">
+        <div class="main">
+            <!-- start registration -->
+            <div class="registration">
+
+                <div class="registration_left">
+
+                    <a href="#">
+                        <div class="reg_fb">
+                            <img src="images/facebook.png" alt=""><i>用户登录</i><div class="clear">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="registration_form">
+                        <!-- Form -->
+                        <form id="registration_form"  method="get">
+                            <div>
+                                <label>
+                                    <input id="lg_username" placeholder="用户账号" type="text" tabindex="1">
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input id="lg_password" placeholder="用户密码" type="password" tabindex="2">
+                                </label>
+                            </div>
+                            <div>
+                                
+                                <!--<input type="submit" value="sign in" id="register-submit">-->
+                                <input type="button" value="sign in" id="register-submit">
+
+                            </div>
+                        </form>
+                        <!-- /Form -->
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+            <!-- end registration -->
+        </div>
+    </div>
+    <!-- footer_top -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="copy">
+                <p class="link">
+                    Copyright &copy; 4-2 14145305 付祥运 计算机142
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

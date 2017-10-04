@@ -22,3 +22,7 @@ E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Release\zh-Hans\EntityFramework.Sq
 E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\obj\Release\Image.EF.csprojResolveAssemblyReference.cache
 E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\obj\Release\Image.EF.dll
 E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\obj\Release\Image.EF.pdb
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Release\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Release\Microsoft.QualityTools.Testing.Fakes.dll
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Release\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Desktop\ASP.NET-MVC\ImageSite\Image.EF\bin\Release\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll

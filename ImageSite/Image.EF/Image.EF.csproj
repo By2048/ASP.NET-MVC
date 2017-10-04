@@ -127,6 +127,8 @@
     <None Include="Concrete\ImageSite.edmx.diagram">
       <DependentUpon>ImageSite.edmx</DependentUpon>
     </None>
+    <Fakes Include="Fakes\Microsoft.Data.Tools.Components.fakes" />
+    <Fakes Include="Fakes\Microsoft.Data.Tools.Schema.Sql.UnitTesting.fakes" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
