@@ -1,0 +1,156 @@
+ create database sql_1;
+ use sql_1;	
+
+create table goods
+(
+	goods_id int not null,
+	goods_name varchar(30),
+	goods_price decimal(5,1),
+	goods_num int,
+	goods_img varchar(100),
+	constraint a1 primary key(goods_id),
+	constraint a2 check(goods_num>=0)
+)
+
+create table users
+(
+	users_name varchar(30),
+	users_psw varchar(30),
+	users_id int not null,
+	users_type varchar(30),
+	users_balance decimal(5,1),
+	users_real_name varchar(30),
+	users_sex char(2),
+	users_phone varchar(30),
+	users_address varchar(100),
+	constraint b1 primary key(users_id),
+	constraint b2 check (users_sex in('男','女')),
+)
+
+create table goods_in
+(
+	goods_in_id int not null,
+	goods_id int,
+	goods_name varchar(30),
+	goods_price decimal(5,1),
+	goods_num int,
+	goods_in_time smalldatetime,
+	constraint c1 primary key(goods_in_id),	
+	--constraint c2 foreign key(goods_id) references goods(goods_id),	
+)
+create table goods_out
+(
+	goods_out_id int not null,
+	goods_id int,
+	goods_name varchar(30),
+	goos_price decimal(5,1),
+	goods_num int,	
+	goods_out_time smalldatetime,
+	constraint d1 primary key(goods_out_id),	
+	--constraint d2 foreign key(goods_id) references goods(goods_id),	
+)
+create table cart
+(
+	cart_id int not null,
+	users_id int,
+	users_name varchar(30),
+	goods_id int,
+	goods_name varchar(30),
+	goods_shopping_time smalldatetime,
+	goods_num int,
+	goods_price decimal(5,1),
+	--constraint e1 foreign key(users_id) references users(users_id),
+	--constraint e2 foreign key(goods_id) references goods(goods_id),
+)
+
+
+insert goods(goods_id,goods_name,goods_price,goods_num,goods_img)
+values(1,'name1',100,0,'images/w1.jpg')
+insert goods(goods_id,goods_name,goods_price,goods_num,goods_img)
+values(2,'name2',200,0,'images/w2.jpg')
+insert goods(goods_id,goods_name,goods_price,goods_num,goods_img)
+values(3,'name3',300,0,'images/w3.jpg')
+insert goods(goods_id,goods_name,goods_price,goods_num,goods_img)
+values(4,'name4',400,0,'images/w4.jpg')
+insert goods(goods_id,goods_name,goods_price,goods_num,goods_img)
+values(5,'name5',500,0,'images/w5.jpg')
+
+insert users(users_id,users_name,users_type,users_psw,users_balance,users_sex,users_real_name,users_phone,users_address)
+values(1,'user1','tourist','123',1000,'男','张三','123123123','地址-1')
+insert users(users_id,users_name,users_type,users_psw,users_balance,users_sex,users_real_name,users_phone,users_address)
+values(2,'user2','admin','123',1000,'女','李四','456456456','地址-2')
+insert users(users_id,users_name,users_type,users_psw,users_balance,users_sex,users_real_name,users_phone,users_address)
+values(3,'user3','member','123',1000,'男','王五','789789789','地址-3')
+insert users(users_id,users_name,users_type,users_psw,users_balance,users_sex,users_real_name,users_phone,users_address)
+values(4,'user4','tourist','123',1000,'女','路人甲','1122332211','地址-NULL')
+
+insert goods_in(goods_in_id,goods_id,goods_num,goods_name,goods_price,goods_in_time)
+values(1,1,1,'name1',100,'2010-10-10')
+insert goods_in(goods_in_id,goods_id,goods_num,goods_name,goods_price,goods_in_time)
+values(2,2,2,'name2',200,'2011-11-11')
+insert goods_in(goods_in_id,goods_id,goods_num,goods_name,goods_price,goods_in_time)
+values(3,3,3,'name3',300,'2012-12-12')
+
+insert goods_out(goods_out_id,goods_id, goods_num,goods_name,goos_price,goods_out_time)
+values(1,1,1,'name1',100,'2010-10-11')
+insert goods_out(goods_out_id,goods_id, goods_num,goods_name,goos_price,goods_out_time)
+values(2,2,1,'name1',200,'2011-11-12')
+insert goods_out(goods_out_id,goods_id, goods_num,goods_name,goos_price,goods_out_time)
+values(3,3,2,'name1',300,'2012-12-13')
+
+insert cart(cart_id,users_id,users_name,goods_id,goods_name,goods_num,goods_price,goods_shopping_time)
+values(1,1,'name1',1,'name1',1,100,'2010-10-11')
+insert cart(cart_id,users_id,users_name,goods_id,goods_name,goods_num,goods_price,goods_shopping_time)
+values(2,2,'name2',2,'name2',1,200,'2011-11-12')
+insert cart(cart_id,users_id,users_name,goods_id,goods_name,goods_num,goods_price,goods_shopping_time)
+values(3,3,'name3',3,'name3',2,300,'2012-12-13')
+
+
+
+------视图-------------------------------------------------------
+
+create view users_type as
+select users_id,users_name,users_type
+from users
+where users_type=users.users_type
+
+create view goods_number as
+select goods.goods_id, goods.goods_name, goods_in.goods_num-goods_out.goods_num as goods_number
+from goods,goods_in,goods_out
+where  goods.goods_id=goods_in.goods_id and goods.goods_id=goods_out.goods_id
+
+create view cart_number as
+select  sum(goods_num) as cart_number
+from cart
+where cart.cart_id=cart_id
+
+
+
+
+------ text -------------------------------------------------------
+
+
+select * from goods
+select * from users
+select * from goods_in
+select * from goods_out
+select * from cart
+
+select *from cart_number
+select *from users_type
+select *from goods_number
+
+delete from users
+delete from goods
+delete from goods_in
+delete from goods_out
+delete from cart
+
+drop table goods
+drop table users
+drop table goods_in
+drop table goods_out
+drop table cart
+
+
+-------------------------------------------------------------

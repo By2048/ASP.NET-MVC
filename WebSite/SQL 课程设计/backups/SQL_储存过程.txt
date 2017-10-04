@@ -1,0 +1,100 @@
+-- 存储过程---------------------------------
+
+
+------- 查询 goods users cart 信息 ---------------------------
+create proc goods_info as
+select goods.goods_id, goods.goods_name, goods.goods_price, goods_in.goods_num-goods_out.goods_num as goods_number
+from goods, goods_in, goods_out
+where goods.goods_id=goods_in.goods_id and goods.goods_id=goods_out.goods_id
+
+
+create proc users_info as
+select users.users_id, users.users_type, users.users_name, users.users_sex, users.users_balance, users.users_phone,users.users_address
+from users
+where users.users_id=users.users_id
+
+create proc cart_info as
+select cart.users_id, cart.users_name, cart.goods_id,cart.goods_name ,cart.goods_num,cart.goods_shopping_time
+from cart
+where cart.users_id=cart.users_id and cart.users_name= cart.users_name
+
+
+------ 登陆过程 ------------------------------
+create procedure user_login
+	@user_name char(10),
+	@user_psw char(10),
+	@user_type char(10) output,
+	@resule char(10) output
+as
+
+if(select COUNT(*) from users where users.users_name=@user_name and users.users_psw=@user_psw)=1
+
+begin
+	set @resule='登陆成功'
+	select @user_type=users.users_type from users where users.users_name=@user_name
+end
+else
+	set @resule='登陆失败'
+	
+
+------- 删除货物信息 以及 入库 出库 记录 ------------------
+create procedure delete_goods 
+   @goods_id char(10),
+   @result smallInt output
+aS
+begin transaction
+delete goods where goods.goods_id=@goods_id
+delete goods_in where goods_in.goods_id=@goods_id
+delete goods_out where goods_out.goods_id=@goods_id
+delete cart where cart.goods_id=@goods_id
+
+
+------- SQL 调用登陆过程 --------------------------------
+declare @user_name char(20),@user_psw char(10) ,@user_type char(20),@result char(10)
+set @user_name='user1'
+set @user_psw='123'
+set @result=0
+exec user_login @user_name,@user_psw,@user_type output,@result output
+print @user_name
+print @user_type
+print @result
+
+----- SQL 调用 删除货物信息及入库出库记录 ---------------
+declare @goods_id varchar(20),@result smallInt
+set @goods_id='good1'
+set @result=0
+exec delete_goods @goods_id,@result output
+print @result
+
+
+
+---------- 事务执行判断机制 -----------------------
+if @@error = 0
+   begin
+     commit transaction
+     set @result=0
+     return 
+   end
+else
+   begin 
+     rollback transaction
+     set @result=-1
+     return 
+   end
+go
+
+
+
+
+
+------ text ----------------------------------
+
+select * from goods
+select * from users
+select * from goods_in
+select * from goods_out
+select * from cart
+
+exec goods_info    
+
+-----------------------------------------------

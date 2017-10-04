@@ -1,0 +1,63 @@
+create trigger goods_insert_1
+on goods
+for insert     
+as
+begin tran     
+if (select goods_num from inserted)!=0   
+begin     
+	print '不允许插入的goods_num!=0'
+	rollback tran     
+end
+
+
+create trigger goods_insert_1
+on goods
+for insert
+as
+--if exists(select goods_price for goods where goods.goods_id=inserted.goods_id>500)
+if(select inserted.goods_price from goods,inserted where goods.goods_id=inserted.goods_id)>500
+begin     
+	print '不允许输入的 goods_price>500'
+	rollback tran     
+end
+
+
+create trigger users_insert
+on users
+for insert
+as
+if(select inserted.users_psw from users,inserted where users.users_id=inserted.users_id)='123456'
+begin     
+	print '不允许用户的密码为 123456'
+	rollback tran     
+end
+
+
+
+
+
+---- 测试数据 --------------------------
+
+insert users(users_id,users_name,users_type,users_psw,users_balance,users_sex,users_real_name,users_phone,users_address)
+values(5,'user5','tourist','123456',1000,'女','路人甲','1122332211','地址-NULL')
+
+select * from users
+
+delete from users
+where users_id='5'
+
+
+
+insert goods(goods_id,goods_name,goods_price,goods_num,goods_img)
+values(6,'name6',500,0,'images/w5.jpg')
+
+delete from goods
+where goods_id='6'
+
+select * from goods
+
+select * from goods_in
+select * from goods_out
+select * from users
+select * from cart
+------------------------------------------------

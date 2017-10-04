@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        #msg
+        {
+            background-color: #ccc;
+            border: 1px solid #ffd800;
+            width: 170px;
+            height: 60px;
+        }
+    </style>
+    <script src="js/jquery-1.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#btnGet").click(function () {
+                var $userId = $("#userId").val();
+                //判断是否输入
+                if ($userId == "") {
+                    $("#msg").text("请输入用户代码！");
+                    return;
+                }
+
+                //获取今日折扣
+                $.get(
+                //url
+                    "handlers/getDiscount.ashx",
+
+                //ashx 是一般处理程序
+                //aspx 是Web窗体
+
+                //parameters
+                    {id: $("#userId").val() },
+
+                //回调函数 data表示请求返回的数据
+                    function (data) {
+                        if (data == "error") {
+                            $("#msg").text("用户代码不正确！");
+                        } else {
+                            $("#msg").text("你今日折扣为：" + data);
+                        }
+                    })
+
+            });
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <input id="userId" type="text" />
+        <input id="btnGet" type="button" value="Ajax获取" />
+        <div id="msg">
+        </div>
+    </div>
+</body>
+</html>
